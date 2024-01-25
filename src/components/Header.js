@@ -14,7 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { IoNewspaperOutline } from "react-icons/io5";
-
+import { RiContactsLine } from "react-icons/ri";
 
 
 function Header() {
@@ -41,10 +41,11 @@ function Header() {
                                 <nav><Link activeClassName="selected" className="nav-link" to="/"><img src={home} className="logo-setting"/>Home</Link></nav>
                                 <nav><Link className="nav-link" to="/about"><img src={about} className="logo-setting"/>About</Link></nav>
                                 <nav><Link className="nav-link" to="/"><img src={setting} className="logo-setting"/>Services</Link></nav>
-                                <nav><Link className="nav-link" to="/"><IoNewspaperOutline className="logo-setting2"/>News Update</Link></nav>                                
+                                <nav><Link className="nav-link" to="/"><IoNewspaperOutline className="logo-setting2"/>News Update</Link></nav>
+                                <nav><Link className="nav-link" to="#" onClick={() => window.location.replace("/#footer_section")}><RiContactsLine className="logo-setting2"/>Contact Us</Link></nav>                                
                             </Nav>
                                 <nav>
-                                    <Link className="nav-link" to="#"><div className="social_btn">Social Networks<span><img src={social} /></span></div></Link>
+                                    <Link className="nav-link" to="#" onClick={() => window.location.replace("/#footer_section")}><div className="social_btn">Social Networks<span><img src={social} /></span></div></Link>
                                 </nav>
                             </Navbar.Collapse>
                         </Container>

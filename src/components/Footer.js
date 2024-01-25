@@ -12,15 +12,76 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { FaLinkedinIn } from "react-icons/fa";
-
-
 import social1 from '../images/social/socialmeaiaicon-01.png';
 import social2 from '../images/social/socialmeaiaicon-02.png';
 import social3 from '../images/social/socialmeaiaicon-03.png';
 import social4 from '../images/social/socialmeaiaicon-04.png';
 import social5 from '../images/social/socialmeaiaicon-05.png';
 import social6 from '../images/social/socialmeaiaicon-06.png';
+import phone from '../images/phone-new-icon.png';
+import Whatsapp from '../images/whatsapp-icon-new.png';
 
+import ChatBot from 'react-simple-chatbot';
+import { ThemeProvider } from 'styled-components';
+
+const steps = [
+    {
+        id: '0',
+        message: 'Hey Geek!',
+ 
+        // This calls the next id
+        // i.e. id 1 in this case
+        trigger: '1',
+    }, {
+        id: '1',
+ 
+        // This message appears in
+        // the bot chat bubble
+        message: 'Please write your username',
+        trigger: '2'
+    }, {
+        id: '2',
+ 
+        // Here we want the user
+        // to enter input
+        user: true,
+        trigger: '3',
+    }, {
+        id: '3',
+        message: " hi {previousValue}, how can I help you?",
+        trigger: 4
+    }, {
+        id: '4',
+        options: [
+ 
+            // When we need to show a number of
+            // options to choose we create alist
+            // like this
+            { value: 1, label: 'View Courses' },
+            { value: 2, label: 'Read Articles' },
+ 
+        ],
+        end: true
+    }
+];
+ 
+// Creating our own theme
+const theme = {
+    background: '#C9FF8F',
+    headerBgColor: '#197B22',
+    headerFontSize: '20px',
+    botBubbleColor: '#0F3789',
+    headerFontColor: 'white',
+    botFontColor: 'white',
+    userBubbleColor: '#FF5733',
+    userFontColor: 'white',
+};
+ 
+// Set some properties of the bot
+const config = {
+    botAvatar: "img.png",
+    floating: true,
+};
 
 function Footer() {
     useEffect(() => 
@@ -29,11 +90,53 @@ function Footer() {
     }, [])
     return (
         <>
-        <div class="footer" data-aos="fade-up">
+        <div class="footer" data-aos="fade-up" id="footer_section">
             <div class="footer_section">
                 <div class="container-fluid footer-bg">
                     <Container>
-                    <Row>
+                    
+                   
+                        <Row>
+                            <Col>
+                                <div className="footer-social text_left">
+                                    <div className="social">
+                                        <Button variant="primary">Get in touch with us</Button>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        <Row>
+                            <Col xs={12} md={3} className="foot_address_left">
+                                <p><span className="foot_address">Chennai : </span></p>
+                                <p>City Plots - Olympia Cyberspace Tech Park, 5th Floor, Arulayiammanpet,
+                                SIDCO Industrial Estate, Guindy, Chennai,
+                                Tamil Nadu 600032.
+                                    <br></br>Phone : +91 7092652333</p><p className="main_id">Mail: hr@cityplots.io</p>
+                            </Col>
+                            <Col xs={12} md={3} className="foot_address_left">
+                                <p><span className="foot_address">Bengaluru : </span></p>
+                                <p>City Plots - Embassy Signet, 5th Floor Kadubeesanahalli Village, Outer Ring Road,<br></br>
+                                 Bengaluru, Karnataka 560103.<br></br>Phone : +91 8071055700</p><p className="main_id">Mail: hr@cityplots.io</p>
+                            </Col>
+                            <Col xs={12} md={3} className="foot_address_left">
+                                <p><span className="foot_address">New Delhi : </span></p>
+                                <p>City Plots - Thapar House, Gate No.1 Eastern & Central Wing Third Floor, 124, Janpath Ln, <br></br>New Delhi 110001.
+                                    <br></br>Phone : +91 11 23486800</p><p className="main_id">Mail: hr@cityplots.io</p>
+                            </Col>
+                            <Col xs={12} md={3} className="foot_address_left">
+                                <p><span className="foot_address">Telangana : </span></p>
+                                <p>City Plots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur, <br></br>Telangana 500081.<br></br>Phone : +91 40 71055700</p><p className="main_id">Mail: hr@cityplots.io</p>
+                            </Col>
+                            <Col xs={12} md={3} className="foot_address_left">
+                                <p><span className="foot_address">Mumbai : </span></p>
+                                <p>City Plots - Supreme Business Park,7th floor, Wing B, Behind Lake Castle, Building, <br></br>Mumbai, Maharashtra 400076.<br></br>Phone: +91 40 71055700
+                                </p><p className="main_id">Mail: hr@cityplots.io</p>
+                            </Col>
+                        </Row>
+                        <br></br>
+                        <br></br>
+                        <Row>
                         {/* <Col className="footer-logo">
                             <p>Copyrights @ 2022</p>
                         </Col>
@@ -53,7 +156,7 @@ function Footer() {
                             <p>2023 Cityplots. All rights reserved</p>
                         </Col> */}
 
-                        <Col xs={12} md={5}>
+                        <Col xs={12} md={4}>
                             <div className="footer-logo">
                                 <img src={footerlogo} alt="" />
                                 <p>Cityplots is not just a typical next door property listing organization. We are a pioneering tech firm that is revolutionizing the way people find and purchase plots.</p>
@@ -63,7 +166,7 @@ function Footer() {
                                 <p><span className="foot_address">WhatsApp Number : </span>+91 7092652333</p> */}
                             </div>
                         </Col>
-                        <Col sm={7}>
+                        <Col sm={8}>
                             <Row>
                                 <Col xs={12} md={4}>
                                     <div className="footer-menu">
@@ -92,84 +195,80 @@ function Footer() {
                                 </Col>
                                 <Col xs={12} md={4}>
                                     <div className="footer-social">
-                                            <div className="social">
-                                                <Button variant="primary">Get in touch with us</Button>
+                                            <div className="social2">
+                                                <Button variant="primary">Social Networks</Button>
                                             </div>
                                             <div className="social-list">
                                                 <ul>
                                                     <li>
-                                                        <a href="https://www.instagram.com/cityplotschennai/">
-                                                            <img src={social6} alt=""/>
+                                                        <a href="https://www.instagram.com/cityplots.io">
+                                                            <img src={social6} alt=""/> Instagram
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="https://www.facebook.com/cityplotschennai/">
-                                                            <img src={social2} alt=""/>
+                                                        <a href="https://www.facebook.com/cityplots.io">
+                                                            <img src={social2} alt=""/> Facebook
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="https://twitter.com/cityplotsch">
-                                                            <img src={social1} alt=""/>
+                                                        <a href="https://twitter.com/cityplots_io">
+                                                            <img src={social1} alt=""/> Twitter
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="https://www.youtube.com/@cityplotschennai">
-                                                            <img src={social3} alt=""/>
+                                                        <a href="https://www.youtube.com/@cityplots">
+                                                            <img src={social3} alt=""/> YouTube
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="https://www.linkedin.com/company/cityplotschennai/">
+                                                        <a href="https://www.linkedin.com/company/cityplots">
                                                             {/* <FaLinkedinIn className="icon_red"/> */}
-                                                            <img src={social5} alt=""/>
+                                                            <img src={social5} alt=""/> Linkedin 
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="https://wa.me/7092652333">
                                                         {/* <FaLinkedinIn className="icon_red"/> */}
-                                                            <img src={social4} alt=""/>
+                                                            <img src={social4} alt=""/> WhatsApp
                                                         </a>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div className="socialcopy">
+                                            {/* <div className="socialcopy">
                                                 <p>Copyright ©️ CITYPLOTS PRIVATE LIMITED. All Right Reserved</p>
-                                            </div>
+                                            </div> */}
                                     </div>
                                 </Col>
                             </Row>
                         </Col>
 
                     </Row>
-                    <br></br>
 
-                        <Row>
-                            <Col xs={12} md={3} className="foot_address_left">
-                                <p><span className="foot_address">Chennai : </span></p>
-                                <p>City Plots - Olympia Cyberspace, 5th Floor, Arulayiammanpet,
-                                SIDCO Industrial Estate, Guindy, Chennai,
-                                Tamil Nadu 600032.
-                                    <br></br>Phone : +91 7092652333</p><p>Mail : info@cityplots.in</p>
-                            </Col>
-                            <Col xs={12} md={3} className="foot_address_left">
-                                <p><span className="foot_address">Bengaluru : </span></p>
-                                <p>Embassy Signet, 5th Floor Kadubeesanahalli <br></br>
-                                Village, Outer Ring Rd, Bengaluru, <br></br>Karnataka 560103.<br></br>Phone : +91 8071055700</p>
-                            </Col>
-                            <Col xs={12} md={3} className="foot_address_left">
-                                <p><span className="foot_address">New Delhi : </span></p>
-                                <p>Thapar House, Gate no.1 Eastern & Central Wing Third Floor, 124, Janpath Ln, <br></br>New Delhi 110001.
-                                    <br></br>Phone : +91 11 23486800</p>
-                            </Col>
-                            <Col xs={12} md={3} className="foot_address_left">
-                                <p><span className="foot_address">Telangana : </span></p>
-                                <p>6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur, <br></br>Telangana 500081.<br></br>Phone : +91 40 71055700</p>
-                            </Col>
-                        </Row>
+                    <Row>
+                        <Col>
+                            <div className="socialcopy">
+                                <p>Copyright ©️ CITYPLOTS PRIVATE LIMITED. All Right Reserved</p>
+                            </div>
+                        </Col>
+                    </Row>
+
+
 
                 </Container>
                 </div>
             </div>
         </div>
+
+
+        <div className="footer_icon_block">
+            <a href="tel:7092652333" a target="_blank"><img src={phone} className="phone_icon"/></a>
+            <a href="https://wa.me/7092652333" a target="_blank"><img src={Whatsapp}className="phone_icon"/></a>
+        </div>
+        
+        <ThemeProvider theme={theme}>
+            <ChatBot headerTitle="GeekBot" steps={steps} {...config} />
+        </ThemeProvider>
+        
         </>
     );
 }
