@@ -71,6 +71,18 @@ const locations = [
   {
     city: "Chennai",
     address: [
+      "CITYPLOTS PRIVATE LIMITED",
+      "City Plots, Olympia Tech Park,",
+      "3rd Floor, ALTIUS,",
+      "1,SIDCO Industrial Estate, Guindy,",
+      "Chennai - 600032.",
+    ],
+    phone: "+91 7092652333",
+    email: "hr@cityplots.io",
+  },
+  {
+    city: "Chennai",
+    address: [
       "City Plots - Olympia Cyberspace Tech Park,",
       "5th Floor, Arulayiammanpet,",
       "SIDCO Industrial Estate, Guindy,",
@@ -295,7 +307,7 @@ function Footer() {
                               <a href="/">Terms of conditions</a>
                             </li>
                             <li>
-                              <a href="/">Privecy policy</a>
+                              <a href="/">Privacy policy</a>
                             </li>
                             <li>
                               <a href="/">Cookie policy</a>
