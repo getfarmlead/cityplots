@@ -20,6 +20,7 @@ import unlockicon6 from '../../../images/unlockicon6.png';
 function Aboutcontent() {
     
       useEffect(() => {
+        window.scrollTo(0, 0);
         AOS.init();
       }, [])
 
