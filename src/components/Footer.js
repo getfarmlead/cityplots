@@ -69,19 +69,18 @@ const steps = [
 
 const locations = [
   {
-    city: "Chennai",
-    address:["CITYPLOTS PRIVATE LIMITED,"],
+    city: "Registered Office Address- SINGAPORE",
+    address:["CITYPLOTS PTE.LTD.,"],
     address_1: [
-      "City Plots, Olympia Tech Park,",
-      "3rd Floor, ALTIUS,",
-      "1,SIDCO Industrial Estate, Guindy,",
+      "141 CECIL STREET,#07-01,",
+      "TUNG ANN ASSOCIATION BUILDING,",
     ],
-    address_2:["Chennai - 600032."],
+    address_2:["SINGAPORE - 069541."],
     phone: "+91 7092652333",
     email: "hr@cityplots.io",
   },
   {
-    city: "Chennai",
+    city: "corporate office address-Chennai",
     address:["City Plots - Olympia Cyberspace "],
     address_1: [
       "Tech Park,",
@@ -94,7 +93,7 @@ const locations = [
     email: "hr@cityplots.io",
   },
   {
-    city: "Bengaluru",
+    city: "corporate office address-Bengaluru",
     address:["City Plots - Embassy Signet,"],
     address_1: [
       "5th Floor Kadubeesanahalli Village, Outer Ring Road,",
@@ -105,7 +104,7 @@ const locations = [
     email: "hr@cityplots.io",
   },
   {
-    city: "New Delhi",
+    city: "corporate office address-New Delhi",
     address:["City Plots - Thapar House,"],
     address_1: [
       "Gate No.1 Eastern & Central Wing Third Floor , 124 , ",
@@ -116,7 +115,7 @@ const locations = [
     email: "hr@cityplots.io",
   },
   {
-    city: "Telangana",
+    city: "corporate office address-Telangana",
     address:["City Plots - 6th Floor,"],
     address_1: [
       "Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,",
@@ -127,7 +126,7 @@ const locations = [
     email: "hr@cityplots.io",
   },
   {
-    city: "Mumbai",
+    city: "corporate office address-Mumbai",
     address:["City Plots - Supreme Business Park,"],
     address_1: [
       "7th floor, Wing B, Behind Lake Castle, Building, Mumbai,",

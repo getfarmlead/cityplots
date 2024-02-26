@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "react-multi-carousel/lib/styles.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -17,14 +17,82 @@ import product_slider4 from "../images/product_slider4.png";
 import product_slider5 from "../images/product_slider5.png";
 import product_slider6 from "../images/product_slider6.png";
 import product_slider7 from "../images/product_slider7.png";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Typist from "react-typist";
 
 function Productslider() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [pioneer, setPioneer] = useState(false);
+  const [blockchain, setBlockchain] = useState(false);
+  const [ai, setAI] = useState(false);
+  const [personalize, setPersonalize] = useState(false);
+  const [unlock, setUnlock] = useState(false);
+  const [cmda, setCMDA] = useState(false);
+  const [step, setStep] = useState(false);
+  const [transform, setTransform] = useState(false);
+
+  const ref = useRef(null);
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+  const ref6 = useRef(null);
+  const ref7 = useRef(null);
+  const ref8 = useRef(null);
+
+  const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+  const handleScroll = () => {
+    if (isInViewport(ref.current) && !isVisible) {
+      setIsVisible(true);
+    }
+    if (isInViewport(ref1.current) && !pioneer) {
+      setPioneer(true);
+    }
+    if (isInViewport(ref2.current) && !blockchain) {
+      setBlockchain(true);
+    }
+    if (isInViewport(ref3.current) && !ai) {
+      setAI(true);
+    }
+    if (isInViewport(ref4.current) && !personalize) {
+      setPersonalize(true);
+    }
+    if (isInViewport(ref5.current) && !unlock) {
+      setUnlock(true);
+    }
+    if (isInViewport(ref6.current) && !cmda) {
+      setCMDA(true);
+    }
+    if (isInViewport(ref7.current) && !step) {
+      setStep(true);
+    }
+    if (isInViewport(ref8.current) && !transform) {
+      setTransform(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="product_slider2" data-aos="fade-up">
@@ -33,10 +101,17 @@ function Productslider() {
             <Col className="p-0">
               <div className="city_video">
                 <div className="content">
-                  <h2>
-                    Discover Your Dream Plot with{" "}
-                    <span className="">Cityplots</span>
-                  </h2>
+                  <div ref={ref}>
+                    {isVisible && (
+                      <Typist className="no-cursor ">
+                        <h2>
+                          Discover Your Dream Plot with
+                          <span> Cityplots</span>
+                        </h2>
+                      </Typist>
+                    )}
+                  </div>
+
                   <p>
                     Cityplots is not your typical organization next door. We are
                     a pioneering tech company that is revolutionizing the way
@@ -65,7 +140,14 @@ function Productslider() {
         <Container className="absolute_video">
           <Row className="align-items-center">
             <Col md={6}>
-              <h2>Pioneering Technology Delivered to Your Fingertips</h2>
+              {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
+              <div ref={ref1}>
+                {pioneer && (
+                  <Typist className="no-cursor ">
+                    <h2>Pioneering Technology Delivered to Your Fingertips</h2>
+                  </Typist>
+                )}
+              </div>
               <Row>
                 <Col>
                   <div className="paracontent" style={{ marginTop: "30px" }}>
@@ -105,13 +187,15 @@ function Productslider() {
           <Row>
             <Col className="p-0">
               <div className="banner_resize">
-                <video muted loop autoPlay className="img-fluid">
-                  <source
-                    src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/fingerprintvdo.mp4"
-                    type="video/mp4"
-                    className="img-fluid"
-                  />
-                </video>
+                <div className="fingerprint">
+                  <video muted loop autoPlay className="img-fluid">
+                    <source
+                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/fingerprintvdo.mp4"
+                      type="video/mp4"
+                      className="img-fluid"
+                    />
+                  </video>
+                </div>
               </div>
             </Col>
           </Row>
@@ -173,11 +257,24 @@ function Productslider() {
               </div>
             </Col>
             <Col className="order2">
-              <h2>
+              {/* <h2>
                 Blockchain: Securing Your{" "}
                 <span style={{ whiteSpace: "nowrap" }}>Investment with </span>{" "}
                 Transparency
-              </h2>
+              </h2> */}
+              <div ref={ref2}>
+                {blockchain && (
+                  <Typist className="no-cursor ">
+                    <h2>
+                      Blockchain: Securing Your{" "}
+                      <span style={{ whiteSpace: "nowrap" }}>
+                        Investment with{" "}
+                      </span>{" "}
+                      Transparency
+                    </h2>
+                  </Typist>
+                )}
+              </div>
               <p>
                 With blockchain, you can trust that your information and legal
                 documentation are immutable and tamper-proof, ensuring a safe
@@ -220,11 +317,20 @@ function Productslider() {
         <Container>
           <Row className="align-items-center">
             <Col>
-              <h2>
+              {/* <h2>
                 AI <br />
                 EMPOWERMENT
-              </h2>
-
+              </h2> */}
+              <div ref={ref3}>
+                {ai && (
+                  <Typist className="no-cursor ">
+                    <h2>
+                      AI <br />
+                      EMPOWERMENT
+                    </h2>
+                  </Typist>
+                )}
+              </div>
               <Row>
                 <Col>
                   <div className="paracontent">
@@ -277,7 +383,16 @@ function Productslider() {
               </div>
             </Col>
             <Col>
-              <h2>PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS</h2>
+              {/* <h2>PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS</h2> */}
+              <div ref={ref4}>
+                {personalize && (
+                  <Typist className="no-cursor ">
+                    <h2>
+                      PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS
+                    </h2>
+                  </Typist>
+                )}
+              </div>
               <p>
                 Our state-of-the-art mobile app is the heart of
                 Cityplots'technological prowess.With its intuitive interface,you
@@ -295,7 +410,16 @@ function Productslider() {
         <Container>
           <Row className="align-items-center">
             <Col>
-              <h2>PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS</h2>
+              {/* <h2>PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS</h2> */}
+              <div ref={ref4}>
+                {personalize && (
+                  <Typist className="no-cursor ">
+                    <h2>
+                      PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS
+                    </h2>
+                  </Typist>
+                )}
+              </div>
               <p>
                 Our state-of-the-art mobile app is the heart of
                 Cityplots'technological prowess.With its intuitive interface,you
@@ -318,10 +442,20 @@ function Productslider() {
         <Container>
           <Row>
             <Col>
-              <h2>
+              {/* <h2>
                 Unlocking Opportunities for Joint Ventures and Independent
                 Channel Partners
-              </h2>
+              </h2> */}
+              <div ref={ref5}>
+                {unlock && (
+                  <Typist className="no-cursor ">
+                    <h2>
+                      Unlocking Opportunities for Joint Ventures and Independent
+                      Channel Partners
+                    </h2>
+                  </Typist>
+                )}
+              </div>
               <p>
                 At Cityplots, we understand the vital role that Joint Ventures
                 and Independent Channel Partners play. That's why our innovative
@@ -374,15 +508,21 @@ function Productslider() {
         <Container>
           <Row className="align-items-center">
             <Col>
-              <h2>
+              {/* <h2>
                 CMDA-Approved Plots, Agricultural Lands, Villa Plots, & More
                 commercial and industrial
-              </h2>
+              </h2> */}
+              <div ref={ref6}>
+                {cmda && (
+                  <Typist className="no-cursor ">
+                    <h2>
+                    PREMIUM PLOTS, AGRICULTURAL LANDS, VILLA PLOTS, & MORE COMMERCIAL AND INDUSTRIAL PLOTS
+                    </h2>
+                  </Typist>
+                )}
+              </div>
               <p>
-                Browse through a diverse range of plot options tailored to your
-                specific needs. Whether you're looking for CMDA-approved plots,
-                fertile agricultural lands, or luxurious villa plots, we have
-                the perfect selection waiting for you.
+              Browse through a diverse range of plot options tailored to your specific needs. Whether you're looking for premium plots, fertile agricultural lands, or luxurious villa plots, we have the perfect selection waiting for you.
               </p>
             </Col>
             <Col>
@@ -403,7 +543,14 @@ function Productslider() {
               </div>
             </Col>
             <Col>
-              <h2>Step into the Metaverse</h2>
+              {/* <h2>Step into the Metaverse</h2> */}
+              <div ref={ref7}>
+                {step && (
+                  <Typist className="no-cursor ">
+                    <h2>Step into the Metaverse</h2>
+                  </Typist>
+                )}
+              </div>
               <p>
                 Explore properties like never before with Cityplots' Metaverse
                 experience. Utilize App Vision Pro for virtual property tours
@@ -420,7 +567,14 @@ function Productslider() {
         <Container>
           <Row className="align-items-center">
             <Col>
-              <h2>Step into the Metaverse</h2>
+              {/* <h2>Step into the Metaverse</h2> */}
+              <div ref={ref7}>
+                {step && (
+                  <Typist className="no-cursor ">
+                    <h2>Step into the Metaverse</h2>
+                  </Typist>
+                )}
+              </div>
               <p>
                 Explore properties like never before with Cityplots' Metaverse
                 experience. Utilize App Vision Pro for virtual property tours
@@ -442,21 +596,16 @@ function Productslider() {
         <Container>
           <Row className="align-items-center">
             <Col>
-              <h2>Transforming Property Exploration Using AI Technology</h2>
+              
+              <div ref={ref8}>
+                {transform && (
+                  <Typist className="no-cursor ">
+                    <h2>Transforming Property Exploration Using AI Technology</h2>
+                  </Typist>
+                )}
+              </div>
               <p>
-                CityPlots stands out as a trailblazing AI-driven investment
-                portal in the property sector, offering a revolutionary platform
-                for those in pursuit of the perfect plot, land, or villa. With a
-                commitment to redefining property ventures, CityPlots seamlessly
-                merges decades of land preservation heritage with contemporary
-                technology, ensuring a unique and flawless experience for every
-                client. Prospective buyers can explore a diverse range of
-                options, including CMDA-approved plots, premium villa plots, and
-                DTCP-approved plots, tailored to their specific needs. This
-                platform not only simplifies the property hunting experience but
-                also ensures transparency and security in transactions, making
-                it a go-to destination for those seeking perfect properties and
-                plots for sale.
+              CityPlots stands out as a trailblazing AI-driven investment portal in the property sector, offering a revolutionary platform for those in pursuit of the perfect plot, land, or villa. With a commitment to redefining property ventures, CityPlots seamlessly merges decades of land preservation heritage with contemporary technology, ensuring a unique and flawless experience for every client. Prospective buyers can explore a diverse range of options tailored to their specific needs. This platform not only simplifies the property hunting experience but also ensures transparency and security in transactions, making it a go-to destination for those seeking perfect properties and plots for sale.
               </p>
             </Col>
             <Col>

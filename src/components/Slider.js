@@ -7,6 +7,7 @@ import mainbanner2 from "../images/mainbanner-svg.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Typist from "react-typist";
 
 function Slider() {
   return (
@@ -25,7 +26,7 @@ function Slider() {
               <Col>
                 <div className="city_video">
                   <div className="content">
-                    <h2>
+                    {/* <h2>
                       INDIA'S 1ST AI DRIVEN
                       <br />
                       INVESTMENT{" "}
@@ -34,7 +35,22 @@ function Slider() {
                       >
                         PORTAL
                       </span>
-                    </h2>
+                    </h2> */}
+                    <Typist className="no-cursor" avgTypingDelay={70}>
+                      <h2>
+                      LEADING 1ST AI DRIVEN
+                        <br />
+                        INVESTMENT{" "}
+                        <span
+                          style={{
+                            color: "#61ff00",
+                            backgroundColor: "#61ff00",
+                          }}
+                        >
+                          PORTAL
+                        </span>
+                      </h2>{" "}
+                    </Typist>
                   </div>
                   <div className="container">
                     <div className="image-container">
