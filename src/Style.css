@@ -254,7 +254,7 @@ svg.logo-setting2 {
 .product_header h2 span {
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   font-family: "Monument-Regular";
   font-size: 67px;
   font-style: normal;
@@ -800,6 +800,11 @@ video.img-fluid {
   max-width: 100%;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .fingerprint video.img-fluid {
+    margin-left: -40%;
+  }
+}
 .city_video {
   position: relative;
   width: 100%;
@@ -1062,3 +1067,69 @@ img.phone_icon {
   bottom: 30%;
   right: 10%;
 }
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+.no-cursor .Cursor {
+  display: none;
+}
+
+/* Blog */
+/* .single_blog_heading {
+  text-align: left;
+  height: 50%;
+}
+.single_blog_description {
+  text-align: left;
+  margin-top: 10px;
+}
+.contact-us {
+  padding: 33px;
+  height: 10%;
+} */
+/* .newblog .MuiTypography-root {
+  font-family: "Monument-Regular";
+} */
+/* .page .MuiButtonBase-root {
+  color: #61ff00;
+  text-align: center;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.blog .MuiInputLabel-root {
+  color: rgb(131, 128, 128) !important;
+}
+
+.blog .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: rgb(151, 149, 149) !important;
+}
+
+.blog .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.blog .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.blog .MuiOutlinedInput-input {
+  color: white !important;
+}
+.content {
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+  line-height: 3rem;
+} */
+/* Assuming you have a class named pagination-container */
+/* .pagination-container .MuiPagination-ul {
+  color: white; 
+  background-color: white; 
+} */
