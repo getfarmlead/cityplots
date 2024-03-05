@@ -103,7 +103,7 @@ function Productslider() {
                 <div className="content">
                   <div ref={ref}>
                     {isVisible && (
-                      <Typist className="no-cursor ">
+                      <Typist className="no-cursor">
                         <h2>
                           Discover Your Dream Plot with
                           <span> Cityplots</span>
@@ -143,7 +143,7 @@ function Productslider() {
               {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
               <div ref={ref1}>
                 {pioneer && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>Pioneering Technology Delivered to Your Fingertips</h2>
                   </Typist>
                 )}
@@ -264,7 +264,7 @@ function Productslider() {
               </h2> */}
               <div ref={ref2}>
                 {blockchain && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>
                       Blockchain: Securing Your{" "}
                       <span style={{ whiteSpace: "nowrap" }}>
@@ -323,7 +323,7 @@ function Productslider() {
               </h2> */}
               <div ref={ref3}>
                 {ai && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>
                       AI <br />
                       EMPOWERMENT
@@ -357,7 +357,7 @@ function Productslider() {
                     <div className="iconpara">
                       <p>
                         Experience our AI Investment Banker, which analyzes your
-                        income, expenses, and savings to rrecommend properties
+                        income, expenses, and savings to recommend properties
                         with higher ROI potential
                       </p>
                     </div>
@@ -386,7 +386,7 @@ function Productslider() {
               {/* <h2>PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS</h2> */}
               <div ref={ref4}>
                 {personalize && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>
                       PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS
                     </h2>
@@ -413,7 +413,7 @@ function Productslider() {
               {/* <h2>PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS</h2> */}
               <div ref={ref4}>
                 {personalize && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>
                       PERSONALIZED MOBILE APP: YOUR GATEWAY TO A WORLD OF PLOTS
                     </h2>
@@ -448,7 +448,7 @@ function Productslider() {
               </h2> */}
               <div ref={ref5}>
                 {unlock && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>
                       Unlocking Opportunities for Joint Ventures and Independent
                       Channel Partners
@@ -514,15 +514,19 @@ function Productslider() {
               </h2> */}
               <div ref={ref6}>
                 {cmda && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>
-                    PREMIUM PLOTS, AGRICULTURAL LANDS, VILLA PLOTS, & MORE COMMERCIAL AND INDUSTRIAL PLOTS
+                      PREMIUM PLOTS, AGRICULTURAL LANDS, VILLA PLOTS, & MORE
+                      COMMERCIAL AND INDUSTRIAL PLOTS
                     </h2>
                   </Typist>
                 )}
               </div>
               <p>
-              Browse through a diverse range of plot options tailored to your specific needs. Whether you're looking for premium plots, fertile agricultural lands, or luxurious villa plots, we have the perfect selection waiting for you.
+                Browse through a diverse range of plot options tailored to your
+                specific needs. Whether you're looking for premium plots,
+                fertile agricultural lands, or luxurious villa plots, we have
+                the perfect selection waiting for you.
               </p>
             </Col>
             <Col>
@@ -546,7 +550,7 @@ function Productslider() {
               {/* <h2>Step into the Metaverse</h2> */}
               <div ref={ref7}>
                 {step && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>Step into the Metaverse</h2>
                   </Typist>
                 )}
@@ -555,7 +559,7 @@ function Productslider() {
                 Explore properties like never before with Cityplots' Metaverse
                 experience. Utilize App Vision Pro for virtual property tours
                 that immerse you in lifelike environments, all from the comfort
-                of your home. Say goodbye to physical constraints and embrace
+                of your home. Say goodbye to physical constraints and Embrace
                 the future of plot exploration.
               </p>
             </Col>
@@ -570,7 +574,7 @@ function Productslider() {
               {/* <h2>Step into the Metaverse</h2> */}
               <div ref={ref7}>
                 {step && (
-                  <Typist className="no-cursor ">
+                  <Typist className="no-cursor">
                     <h2>Step into the Metaverse</h2>
                   </Typist>
                 )}
@@ -595,24 +599,61 @@ function Productslider() {
       <div className="side_product_slider6" data-aos="fade-up">
         <Container>
           <Row className="align-items-center">
-            <Col>
-              
-              <div ref={ref8}>
-                {transform && (
-                  <Typist className="no-cursor ">
-                    <h2>Transforming Property Exploration Using AI Technology</h2>
-                  </Typist>
-                )}
-              </div>
-              <p>
-              CityPlots stands out as a trailblazing AI-driven investment portal in the property sector, offering a revolutionary platform for those in pursuit of the perfect plot, land, or villa. With a commitment to redefining property ventures, CityPlots seamlessly merges decades of land preservation heritage with contemporary technology, ensuring a unique and flawless experience for every client. Prospective buyers can explore a diverse range of options tailored to their specific needs. This platform not only simplifies the property hunting experience but also ensures transparency and security in transactions, making it a go-to destination for those seeking perfect properties and plots for sale.
-              </p>
-            </Col>
-            <Col>
-              <div className="banner_resize">
-                <img src={product_slider6} className="img-fluid" />
-              </div>
-            </Col>
+            <div ref={ref8}>
+              {transform && (
+                <Typist className="no-cursor">
+                  <h2>Transforming Property Exploration Using AI Technology</h2>
+                </Typist>
+              )}
+            </div>
+            <p>
+              CityPlots stands out as a trailblazing AI-driven investment portal
+              in the property sector, offering a revolutionary platform for
+              those in pursuit of the perfect plot, land, or villa. With a
+              commitment to redefining property ventures, CityPlots seamlessly
+              merges decades of land preservation heritage with contemporary
+              technology, ensuring a unique and flawless experience for every
+              client. Prospective buyers can explore a diverse range of options,
+              including CMDA-approved plots, premium villa plots, and
+              DTCP-approved plots, tailored to their specific needs. This
+              platform not only simplifies the property hunting experience but
+              also ensures transparency and security in transactions, making it
+              a go-to destination for those seeking perfect properties and plots
+              for sale.
+            </p>
+            <p>
+              Whether you're in search of approved plots near you or looking to
+              buy land, plots, or villas online, CityPlots offers a
+              user-friendly mobile app that serves as a gateway to a world of
+              possibilities. The intuitive interface empowers users to browse
+              through various types of properties such as CMDA-approved housing
+              plots, premium villa plots, apartments, and individual houses
+              effortlessly. CityPlots app leverages the power of AI to provide
+              real-time news, and updates, analyze financial aspects, and
+              recommend properties with higher ROI potential. Additionally, the
+              incorporation of blockchain technology ensures the immutability
+              and tamper-proof nature of legal documentation, instilling trust
+              and transparency in every transaction.
+            </p>
+            <p>
+              CityPlots caters to a wide geographic spectrum, with exceptional
+              ongoing projects in Chennai, Hyderabad, Bengaluru, and Mumbai. The
+              platform's commitment to delivering on-time registration, rigorous
+              legal verification, 24/7 AI support, and financial assistance adds
+              a layer of assurance and convenience for those navigating the
+              dynamic landscape of property investment. Whether you're an
+              individual buyer or interested in joint ventures, CityPlots
+              provides diverse investment opportunities, creating a seamless and
+              empowering experience for all those seeking CMDA-approved villas,
+              land, and plots for sale.
+            </p>
+
+            <div className="banner_resize">
+              <img
+                src={product_slider6}
+                style={{ width: "60%", marginTop: "5%" }}
+              />
+            </div>
           </Row>
         </Container>
       </div>
