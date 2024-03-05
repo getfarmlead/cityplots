@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import mainbanner from "../images/social/topBanner.png";
+import mainbanner from "../images/social/Banner 1.png";
 import comment1 from "../images/comment_1.png";
 import comment2 from "../images/comment_2.png";
 import mainbanner2 from "../images/mainbanner-svg.png";
