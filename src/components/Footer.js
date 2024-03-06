@@ -20,6 +20,18 @@ import social5 from "../images/social/socialmeaiaicon-05.png";
 import social6 from "../images/social/socialmeaiaicon-06.png";
 import phone from "../images/phone-new-icon.png";
 import Whatsapp from "../images/whatsapp-icon-new.png";
+import bangalore from "../images/address/Bangalore-01.jpg";
+import bangalore2 from "../images/address/Bangalore-02.jpg";
+import chennai from "../images/address/chennai-02.jpg";
+import chennai2 from "../images/address/chennai-01.jpg";
+import newdelhi from "../images/address/Delhi-01.jpg";
+import newdelhi2 from "../images/address/Delhi-02.jpg";
+import telugana from "../images/address/hyberdad-01.jpg";
+import telugana2 from "../images/address/hyberdad-02.jpg";
+import mumbai from "../images/address/mumbai-01.jpg";
+import mumbai2 from "../images/address/mumbai-02.jpg";
+import singapore from "../images/address/singapore-01.jpg";
+import singapore2 from "../images/address/singapore-02.jpg";
 
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
@@ -68,70 +80,64 @@ const steps = [
 ];
 
 const locations = [
+  // {
+  //   image: singapore,
+  //   city: "Registered Office Address-Singapore",
+  //   address: ["CITYPLOTS PTE.LTD,"],
+  //   address_1: ["141 CECIL STREET,", " #07-01 TUNG ANN ASSOCIATION BUILDING,"],
+  //   address_2: ["Singapore - 069541."],
+  //   phone: "+91 7092652333",
+  //   email: "hr@cityplots.io",
+  // },
   {
-    city: "Registered Office Address- SINGAPORE",
-    address:["CITYPLOTS PTE.LTD.,"],
-    address_1: [
-      "141 CECIL STREET,#07-01,",
-      "TUNG ANN ASSOCIATION BUILDING,",
-    ],
-    address_2:["SINGAPORE - 069541."],
+    image: chennai,
+    city: "corporate office -Chennai",
+    address: ["City Plots - Olympia Cyberspace,Tech Park,", 
+    "5th Floor, SIDCO Industrial Estate, Guindy "],
+    address_1: [""],
+    address_2: ["Chennai - 600032."], 
     phone: "+91 7092652333",
     email: "hr@cityplots.io",
   },
   {
-    city: "corporate office address-Chennai",
-    address:["City Plots - Olympia Cyberspace "],
+    image: bangalore,
+    city: "corporate office -Bengaluru",
+    address: ["City Plots - Embassy Signet,5th Floor Kadubeesanahalli Village, Outer Ring Road, Bengaluru, Karnataka-560103."],
     address_1: [
-      "Tech Park,",
-      "5th Floor, Arulayiammanpet,",
-      "SIDCO Industrial Estate, Guindy,",
-      
+      "",
+      "",
     ],
-    address_2:["Chennai - 600032."],
-    phone: "+91 7092652333",
-    email: "hr@cityplots.io",
-  },
-  {
-    city: "corporate office address-Bengaluru",
-    address:["City Plots - Embassy Signet,"],
-    address_1: [
-      "5th Floor Kadubeesanahalli Village, Outer Ring Road,",
-      "Bengaluru,",
-    ],
-    address_2:["Karnataka-560103."],
+    address_2: [""],
     phone: "+91 8071055700",
     email: "hr@cityplots.io",
   },
   {
-    city: "corporate office address-New Delhi",
-    address:["City Plots - Thapar House,"],
+    image: newdelhi,
+    city: "corporate office -New Delhi",
+    address: ["City Plots - Thapar House,Gate No.1 Eastern & Central Wing Third Floor , 124 ,Janpath Ln ,"],
     address_1: [
-      "Gate No.1 Eastern & Central Wing Third Floor , 124 , ",
-      "Janpath Ln ,"
+      " ",
+      "",
     ],
-    address_2:["New Delhi-110001."],
+    address_2: ["New Delhi-110001."],
     phone: "+91 11 23486800",
     email: "hr@cityplots.io",
   },
   {
-    city: "corporate office address-Telangana",
-    address:["City Plots - 6th Floor,"],
-    address_1: [
-      "Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,",
-      ,
-    ],
-    address_2:["Telangana-500081."],
+    image: telugana,
+    city: "corporate office -Telangana",
+    address: ["City Plots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,"],
+    address_1: [],
+    address_2: ["Telangana-500081."],
     phone: "+91 40 71055700",
     email: "hr@cityplots.io",
   },
   {
-    city: "corporate office address-Mumbai",
-    address:["City Plots - Supreme Business Park,"],
-    address_1: [
-      "7th floor, Wing B, Behind Lake Castle, Building, Mumbai,",
-    ],
-    address_2:["Maharashtra-400076."],
+    image: mumbai,
+    city: "corporate office -Mumbai",
+    address: ["City Plots - Supreme Business Park,7th floor, Wing B, Behind Lake Castle, Building, Mumbai,"],
+    address_1: [""],
+    address_2: ["Maharashtra-400076."],
     phone: "+91 40 71055700",
     email: "hr@cityplots.io",
   },
@@ -175,71 +181,96 @@ function Footer() {
                 </Col>
               </Row>
 
-              {/* <Row>
-                        <Col xs={12} md={3} className="foot_address_left">
-                            <p><span className="foot_address">Chennai : </span></p>
-                            <div>
-                                <p>City Plots - Olympia Cyberspace Tech Park,</p>
-                                <p>5th Floor, Arulayiammanpet,</p>
-                                <p>SIDCO Industrial Estate, Guindy,</p>
-                                <p>Chennai,Tamil Nadu - 600032.</p>
-                                <p>Phone: +91 7092652333</p>
-                            </div>
-                            <p className="main_id">Mail: hr@cityplots.io</p>
-                        </Col>
+              <Row>
+                <Col xs={12} md={5} style={{ textAlign: "left" }}>
+                  <div>
+                    <h2 style={{ color: "#61ff00" }}>
+                      Registered Office -Singapore
+                    </h2>
+                    <br />
 
-                        <Col xs={12} md={3} className="foot_address_left">
-                            <p><span className="foot_address">Bengaluru : </span></p>
-                            <div>
-                                <p>City Plots - Embassy Signet,</p>
-                                <p> 5th Floor Kadubeesanahalli Village, Outer Ring Road,</p>
-                                <p>Bengaluru, Karnataka 560103.</p>
-                                <p>Phone: +91 8071055700</p>
-                            </div>
-                            <p className="main_id">Mail: hr@cityplots.io</p>
-                        </Col>
+                    <p>CITYPLOTS PTE.LTD, 141 CECIL STREET,</p>
+                    <p>#07-01 TUNG ANN ASSOCIATION BUILDING,</p>
+                    <p>Singapore - 069541.</p>
+                    <p>+91 7092652333</p>
+                    <p>hr@cityplots.io</p>
+                  </div>
+                </Col>
 
-                        <Col xs={12} md={3} className="foot_address_left">
-                            <p><span className="foot_address">New Delhi : </span></p>
-                            <div>
-                                <p>City Plots - Thapar House, Gate No.1 Eastern & Central Wing Third Floor, 124, Janpath Ln,</p>
-                                <p>New Delhi 110001.</p>
-                                <p>Phone: +91 11 23486800</p>
-                            </div>
-                            <p className="main_id">Mail: hr@cityplots.io</p>
-                        </Col>
-
-                        <Col xs={12} md={3} className="foot_address_left">
-                            <p><span className="foot_address">Telangana : </span></p>
-                            <div>
-                                <p>City Plots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,</p>
-                                <p>Telangana 500081.</p>
-                                <p>Phone: +91 40 71055700</p>
-                            </div>
-                            <p className="main_id">Mail: hr@cityplots.io</p>
-                        </Col>
-
-                        <Col xs={12} md={3} className="foot_address_left">
-                            <p><span className="foot_address">Mumbai : </span></p>
-                            <div>
-                                <p>City Plots - Supreme Business Park, 7th floor, Wing B, Behind Lake Castle, Building,</p>
-                                <p>Mumbai, Maharashtra 400076.</p>
-                                <p>Phone: +91 40 71055700</p>
-                            </div>
-                            <p className="main_id">Mail: hr@cityplots.io</p>
-                        </Col>
-                        </Row> */}
-
+                <Col xs={12} md={7}>
+                  <div
+                    className="image-container"
+                    style={{ position: "relative" }}
+                  >
+                    <img
+                      src={singapore}
+                      alt="singapore"
+                      style={{ width: "100%" }}
+                    />
+                    <img
+                      src={singapore2}
+                      alt="singapore"
+                      className="overlay-images"
+                    />
+                  </div>
+                </Col>
+              </Row>
+             
               <Row>
                 {locations.map((location, index) => (
-                  <Col key={index} xs={12} md={3} className="foot_address_left">
+                  <Col key={index} xs={12} md={4} className="foot_address_left">
+                    <div
+                      className="image-container"
+                      style={{ position: "relative",marginTop:"35px" }}
+                    >
+                      <img
+                        src={location.image}
+                        alt="location"
+                        style={{ width: "100%" }}
+                      />
+                      {location.city === "corporate office -Chennai" && (
+                        <img
+                          src={chennai2}
+                          alt="Chennai"
+                          className="overlay-images"
+                        />
+                      )}
+                      {location.city === "corporate office -Bengaluru" && (
+                        <img
+                          src={bangalore2}
+                          alt="Chennai"
+                          className="overlay-images"
+                        />
+                      )}
+                      {location.city === "corporate office -Telangana" && (
+                        <img
+                          src={telugana2}
+                          alt="Telangana"
+                          className="overlay-images"
+                        />
+                      )}
+                      {location.city === "corporate office -Mumbai" && (
+                        <img
+                          src={mumbai2}
+                          alt="Mumbai"
+                          className="overlay-images"
+                        />
+                      )}
+                      {location.city === "corporate office -New Delhi" && (
+                        <img
+                          src={newdelhi2}
+                          alt="New Delhi"
+                          className="overlay-images"
+                        />
+                      )}
+                    </div>
                     <p>
                       <span className="foot_address">{location.city} : </span>
                     </p>
                     <div>
                       <p>{location.address}</p>
                       {location.address_1.map((line, i) => (
-                        <p key={i} >{line}</p>
+                        <p key={i}>{line}</p>
                       ))}
                       <p>{location.address_2}</p>
                       <p>Phone: {location.phone}</p>

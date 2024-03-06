@@ -205,44 +205,6 @@ function Productslider() {
       <br />
       <br />
 
-      {/* <div className="side_product_slider" data-aos="fade-up">
-            <Container>
-                <Row>
-                </Row>
-                <Row className="align-items-center">
-                    <Col>
-                    <h2>Pioneering Technology Delivered to Your Fingertips</h2>
-                    <Row>
-                      <Col>
-                      <div className="paracontent">
-                        <div className="icon"><img src={Ellipse} className="img-fluid" /></div>
-                        <div className="iconpara"><p>We leverage the latest advancements in technology to provide you with an unrivaled experience.</p></div>
-                      </div>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                      <div className="paracontent">
-                        <div className="icon"><img src={Ellipse} className="img-fluid" /></div>
-                        <div className="iconpara"><p>Our innovative approach sets us apart from traditional companies.</p></div>
-                      </div>
-                      </Col>
-                    </Row>
-
-                    </Col>
-                    <Col>
-                    <div className="banner_resize">
-                     
-                        <video muted loop autoPlay className="img-fluid">
-                            <source src="https://cityplots.000webhostapp.com/sale/fingerprint2.mp4" type="video/mp4" className="img-fluid"/>
-                        </video>
-
-                    </div>
-                    </Col>
-                </Row>
-            </Container>
-        </div> */}
-
       <div className="side_product_slider3 web_view" data-aos="fade-up">
         <Container>
           <Row className="align-items-center">
@@ -600,28 +562,37 @@ function Productslider() {
       <div className="side_product_slider6" data-aos="fade-up">
         <Container>
           <Row className="align-items-center">
-            <div ref={ref8}>
-              {transform && (
-                <Typist className="no-cursor">
-                  <h2>Transforming Property Exploration Using AI Technology</h2>
-                </Typist>
-              )}
-            </div>
-            <p>
-              CityPlots stands out as a trailblazing AI-driven investment portal
-              in the property sector, offering a revolutionary platform for
-              those in pursuit of the perfect plot, land, or villa. With a
-              commitment to redefining property ventures, CityPlots seamlessly
-              merges decades of land preservation heritage with contemporary
-              technology, ensuring a unique and flawless experience for every
-              client. Prospective buyers can explore a diverse range of options,
-              including CMDA-approved plots, premium villa plots, and
-              DTCP-approved plots, tailored to their specific needs. This
-              platform not only simplifies the property hunting experience but
-              also ensures transparency and security in transactions, making it
-              a go-to destination for those seeking perfect properties and plots
-              for sale.
-            </p>
+            <Col>
+              <div ref={ref8}>
+                {transform && (
+                  <Typist className="no-cursor">
+                    <h2>
+                      Transforming Property Exploration Using AI Technology
+                    </h2>
+                  </Typist>
+                )}
+              </div>
+              <p>
+                CityPlots stands out as a trailblazing AI-driven investment
+                portal in the property sector, offering a revolutionary platform
+                for those in pursuit of the perfect plot, land, or villa. With a
+                commitment to redefining property ventures, CityPlots seamlessly
+                merges decades of land preservation heritage with contemporary
+                technology, ensuring a unique and flawless experience for every
+                client. Prospective buyers can explore a diverse range of
+                options, including CMDA-approved plots, premium villa plots, and
+                DTCP-approved plots, tailored to their specific needs. This
+                platform not only simplifies the property hunting experience but
+                also ensures transparency and security in transactions, making
+                it a go-to destination for those seeking perfect properties and
+                plots for sale.
+              </p>
+            </Col>
+            <Col>
+              <div className="banner_resize">
+                <img src={product_slider6} className="img-fluid" />
+              </div>
+            </Col>
             <p>
               Whether you're in search of approved plots near you or looking to
               buy land, plots, or villas online, CityPlots offers a
@@ -636,6 +607,7 @@ function Productslider() {
               and tamper-proof nature of legal documentation, instilling trust
               and transparency in every transaction.
             </p>
+
             <p>
               CityPlots caters to a wide geographic spectrum, with exceptional
               ongoing projects in Chennai, Hyderabad, Bengaluru, and Mumbai. The
@@ -646,15 +618,8 @@ function Productslider() {
               individual buyer or interested in joint ventures, CityPlots
               provides diverse investment opportunities, creating a seamless and
               empowering experience for all those seeking CMDA-approved villas,
-              land, and plots for sale.
+              land, and plots for sale.
             </p>
-
-            <div className="banner_resize">
-              <img
-                src={product_slider6}
-                style={{ width: "60%", marginTop: "5%" }}
-              />
-            </div>
           </Row>
         </Container>
       </div>
