@@ -205,30 +205,16 @@ function Productslider() {
       <br />
       <br />
 
-      <div className="side_product_slider3 web_view" data-aos="fade-up">
-        <Container>
-          <Row className="align-items-center">
-            <Col className="order1 ">
-              <div className="banner_resize">
-                <video muted loop autoPlay className="img-fluid">
-                  <source
-                    src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Block+chain+animation.mp4"
-                    type="video/mp4"
-                    className="img-fluid"
-                  />
-                </video>
-              </div>
-            </Col>
-            <Col className="order2">
-              {/* <h2>
-                Blockchain: Securing Your{" "}
-                <span style={{ whiteSpace: "nowrap" }}>Investment with </span>{" "}
-                Transparency
-              </h2> */}
+      <div className="side_product_slider" data-aos="fade-up">
+        <Container className="absolute_video">
+          <Row className="align-items-right">
+            <Col md={6}>
+              {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
               <div ref={ref2}>
                 {blockchain && (
                   <Typist className="no-cursor">
                     <h2>
+                      {" "}
                       Blockchain: Securing Your{" "}
                       <span style={{ whiteSpace: "nowrap" }}>
                         Investment with{" "}
@@ -238,52 +224,49 @@ function Productslider() {
                   </Typist>
                 )}
               </div>
-              <p>
-                With blockchain, you can trust that your information and legal
-                documentation are immutable and tamper-proof, ensuring a safe
-                and transparent transaction.
-              </p>
+              <Row>
+                <Col>
+                  <div className="paracontent" style={{ marginTop: "30px" }}>
+                    <div className="iconpara">
+                      <p>
+                        With blockchain, you can trust that your information and
+                        legal documentation are immutable and tamper-proof,
+                        ensuring a safe and transparent transaction.
+                      </p>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+              <br />
+              <Row></Row>
             </Col>
           </Row>
         </Container>
-      </div>
 
-      <div className="side_product_slider3  mobile_view" data-aos="fade-up">
-        <Container>
-          <Row className="align-items-center">
-            <Col className="order2">
-              <h2 style={{ marginTop: "30px" }}>
-                Blockchain: Securing Your Investment with Transparency
-              </h2>
-              <p>
-                With blockchain, you can trust that your information and legal
-                documentation are immutable and tamper-proof, ensuring a safe
-                and transparent transaction.
-              </p>
-            </Col>
-            <Col className="order1 ">
+        <Container fluid>
+          <Row>
+            <Col className="p-0">
               <div className="banner_resize">
-                <video muted loop autoPlay className="img-fluid">
-                  <source
-                    src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Block+chain+animation.mp4"
-                    type="video/mp4"
-                    className="img-fluid"
-                  />
-                </video>
+                <div className="fingerprint">
+                  <video muted loop autoPlay className="img-fluid">
+                    <source
+                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Block+chain+full+size+animation1.mp4"
+                      type="video/mp4"
+                      className="img-fluid"
+                    />
+                  </video>
+                </div>
               </div>
             </Col>
           </Row>
         </Container>
       </div>
 
-      <div className="side_product_slider4" data-aos="fade-up">
-        <Container>
+      <div className="side_product_slider" data-aos="fade-up">
+        <Container className="absolute_video">
           <Row className="align-items-center">
-            <Col>
-              {/* <h2>
-                AI <br />
-                EMPOWERMENT
-              </h2> */}
+            <Col md={6}>
+              {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
               <div ref={ref3}>
                 {ai && (
                   <Typist className="no-cursor">
@@ -296,7 +279,7 @@ function Productslider() {
               </div>
               <Row>
                 <Col>
-                  <div className="paracontent">
+                  <div className="paracontent" style={{ marginTop: "30px" }}>
                     <div className="icon">
                       <img src={Ellipse} className="img-fluid" />
                     </div>
@@ -311,6 +294,7 @@ function Productslider() {
                   </div>
                 </Col>
               </Row>
+              <br />
               <Row>
                 <Col>
                   <div className="paracontent">
@@ -328,14 +312,28 @@ function Productslider() {
                 </Col>
               </Row>
             </Col>
-            <Col>
+          </Row>
+        </Container>
+
+        <Container fluid>
+          <Row>
+            <Col className="p-0">
               <div className="banner_resize">
-                <img src={product_slider4} className="img-fluid" />
+                <div className="fingerprint">
+                  <video muted loop autoPlay className="img-fluid">
+                    <source
+                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Ai.mp4"
+                      type="video/mp4"
+                      className="img-fluid"
+                    />
+                  </video>
+                </div>
               </div>
             </Col>
           </Row>
         </Container>
       </div>
+      <br />
 
       <div className="side_product_slider5 web_view" data-aos="fade-up">
         <Container>

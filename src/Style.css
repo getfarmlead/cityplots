@@ -50,7 +50,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   background: var(--black);
 } */
 .footer {
-  padding: 100px 0 50px 0;
+  padding: 0px 0 50px 0;
 }
 .socialcopy {
   padding: 1% 20%;
@@ -520,7 +520,7 @@ svg.logo-setting2 {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
 }
 
 .side_product_slider7 {
@@ -1180,4 +1180,11 @@ img.phone_icon {
 
 .image-container:hover .overlay-images {
   opacity: 1;
+}
+.align-items-right {
+  justify-content: flex-end;
+}
+
+.block-paracontent {
+  text-align: right;
 }

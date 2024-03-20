@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import footerlogo from "../images/footerlogo.png";
+import footerlogo from "../images/cityplots new logo.png";
 import Button from "react-bootstrap/Button";
 import facebookic from "../images/facebookic.svg";
 import instagram from "../images/instagram.svg";
@@ -20,18 +20,18 @@ import social5 from "../images/social/socialmeaiaicon-05.png";
 import social6 from "../images/social/socialmeaiaicon-06.png";
 import phone from "../images/phone-new-icon.png";
 import Whatsapp from "../images/whatsapp-icon-new.png";
-import bangalore from "../images/address/Bangalore-01.jpg";
-import bangalore2 from "../images/address/Bangalore-02.jpg";
-import chennai from "../images/address/chennai-02.jpg";
-import chennai2 from "../images/address/chennai-01.jpg";
-import newdelhi from "../images/address/Delhi-01.jpg";
-import newdelhi2 from "../images/address/Delhi-02.jpg";
-import telugana from "../images/address/hyberdad-01.jpg";
-import telugana2 from "../images/address/hyberdad-02.jpg";
-import mumbai from "../images/address/mumbai-01.jpg";
-import mumbai2 from "../images/address/mumbai-02.jpg";
-import singapore from "../images/address/singapore-01.jpg";
-import singapore2 from "../images/address/singapore-02.jpg";
+import bangalore from "../images/newaddress/Bangalore-01.png";
+import bangalore2 from "../images/newaddress/Bangalore-02.png";
+import chennai from "../images/newaddress/chennai-02.png";
+import chennai2 from "../images/newaddress/chennai-01.png";
+import newdelhi from "../images/newaddress/Delhi-01.png";
+import newdelhi2 from "../images/newaddress/Delhi-02.png";
+import telugana from "../images/newaddress/hyberdad-01.png";
+import telugana2 from "../images/newaddress/hyberdad-02.png";
+import mumbai from "../images/newaddress/mumbai-01.png";
+import mumbai2 from "../images/newaddress/mumbai-02.png";
+import singapore from "../images/newaddress/singapore-01.png";
+import singapore2 from "../images/newaddress/singapore-02.png";
 
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
@@ -91,42 +91,44 @@ const locations = [
   // },
   {
     image: chennai,
-    city: "corporate office -Chennai",
-    address: ["City Plots - Olympia Cyberspace,Tech Park,", 
-    "5th Floor, SIDCO Industrial Estate, Guindy "],
+    city: "Chennai",
+    address: [
+      "City Plots - Olympia Cyberspace,Tech Park,",
+      "5th Floor, SIDCO Industrial Estate, Guindy ",
+    ],
     address_1: [""],
-    address_2: ["Chennai - 600032."], 
+    address_2: ["Chennai - 600032."],
     phone: "+91 7092652333",
     email: "hr@cityplots.io",
   },
   {
     image: bangalore,
-    city: "corporate office -Bengaluru",
-    address: ["City Plots - Embassy Signet,5th Floor Kadubeesanahalli Village, Outer Ring Road, Bengaluru, Karnataka-560103."],
-    address_1: [
-      "",
-      "",
+    city: "Bengaluru",
+    address: [
+      "City Plots - Embassy Signet,5th Floor Kadubeesanahalli Village, Outer Ring Road, Bengaluru, Karnataka-560103.",
     ],
+    address_1: ["", ""],
     address_2: [""],
     phone: "+91 8071055700",
     email: "hr@cityplots.io",
   },
   {
     image: newdelhi,
-    city: "corporate office -New Delhi",
-    address: ["City Plots - Thapar House,Gate No.1 Eastern & Central Wing Third Floor , 124 ,Janpath Ln ,"],
-    address_1: [
-      " ",
-      "",
+    city: "New Delhi",
+    address: [
+      "City Plots - Thapar House,Gate No.1 Eastern & Central Wing Third Floor , 124 ,Janpath Ln ,",
     ],
+    address_1: [" ", ""],
     address_2: ["New Delhi-110001."],
     phone: "+91 11 23486800",
     email: "hr@cityplots.io",
   },
   {
     image: telugana,
-    city: "corporate office -Telangana",
-    address: ["City Plots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,"],
+    city: "Telangana",
+    address: [
+      "City Plots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,",
+    ],
     address_1: [],
     address_2: ["Telangana-500081."],
     phone: "+91 40 71055700",
@@ -134,8 +136,10 @@ const locations = [
   },
   {
     image: mumbai,
-    city: "corporate office -Mumbai",
-    address: ["City Plots - Supreme Business Park,7th floor, Wing B, Behind Lake Castle, Building, Mumbai,"],
+    city: "Mumbai",
+    address: [
+      "City Plots - Supreme Business Park,7th floor, Wing B, Behind Lake Castle, Building, Mumbai,",
+    ],
     address_1: [""],
     address_2: ["Maharashtra-400076."],
     phone: "+91 40 71055700",
@@ -215,48 +219,48 @@ function Footer() {
                   </div>
                 </Col>
               </Row>
-             
+
               <Row>
                 {locations.map((location, index) => (
                   <Col key={index} xs={12} md={4} className="foot_address_left">
                     <div
                       className="image-container"
-                      style={{ position: "relative",marginTop:"35px" }}
+                      style={{ position: "relative", marginTop: "35px" }}
                     >
                       <img
                         src={location.image}
                         alt="location"
                         style={{ width: "100%" }}
                       />
-                      {location.city === "corporate office -Chennai" && (
+                      {location.city === "Chennai" && (
                         <img
                           src={chennai2}
                           alt="Chennai"
                           className="overlay-images"
                         />
                       )}
-                      {location.city === "corporate office -Bengaluru" && (
+                      {location.city === "Bengaluru" && (
                         <img
                           src={bangalore2}
                           alt="Chennai"
                           className="overlay-images"
                         />
                       )}
-                      {location.city === "corporate office -Telangana" && (
+                      {location.city === "Telangana" && (
                         <img
                           src={telugana2}
                           alt="Telangana"
                           className="overlay-images"
                         />
                       )}
-                      {location.city === "corporate office -Mumbai" && (
+                      {location.city === "Mumbai" && (
                         <img
                           src={mumbai2}
                           alt="Mumbai"
                           className="overlay-images"
                         />
                       )}
-                      {location.city === "corporate office -New Delhi" && (
+                      {location.city === "New Delhi" && (
                         <img
                           src={newdelhi2}
                           alt="New Delhi"
