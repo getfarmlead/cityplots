@@ -67,6 +67,12 @@ function Header() {
                         </Link>
                       </nav>
                       <nav>
+                        <Link className="nav-link" to="/newblog">
+                          <IoNewspaperOutline className="logo-setting2" />
+                          Blog
+                        </Link>
+                      </nav>
+                      <nav>
                         <Link
                           className="nav-link"
                           to="#"

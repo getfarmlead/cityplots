@@ -207,7 +207,7 @@ function Productslider() {
 
       <div className="side_product_slider" data-aos="fade-up">
         <Container className="absolute_video">
-          <Row className="align-items-right">
+          <Row className="align-items-right" style={{ marginLeft: "10%" }}>
             <Col md={6}>
               {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
               <div ref={ref2}>
@@ -215,7 +215,11 @@ function Productslider() {
                   <Typist className="no-cursor">
                     <h2>
                       {" "}
-                      Blockchain: Securing Your{" "}
+                      Blockchain:{" "}
+                      <span style={{ whiteSpace: "nowrap" }}>
+                        Securing Your
+                      </span>
+                      <br />
                       <span style={{ whiteSpace: "nowrap" }}>
                         Investment with{" "}
                       </span>{" "}
@@ -250,7 +254,7 @@ function Productslider() {
                 <div className="fingerprint">
                   <video muted loop autoPlay className="img-fluid">
                     <source
-                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Block+chain+full+size+animation1.mp4"
+                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Blockchain+animation+Final.mp4"
                       type="video/mp4"
                       className="img-fluid"
                     />
@@ -322,7 +326,7 @@ function Productslider() {
                 <div className="fingerprint">
                   <video muted loop autoPlay className="img-fluid">
                     <source
-                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Ai.mp4"
+                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/AI+Animation+Final.mp4"
                       type="video/mp4"
                       className="img-fluid"
                     />
