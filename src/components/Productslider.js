@@ -202,8 +202,6 @@ function Productslider() {
           </Row>
         </Container>
       </div>
-      <br />
-      <br />
 
       <div className="side_product_slider" data-aos="fade-up">
         <Container className="absolute_video">
