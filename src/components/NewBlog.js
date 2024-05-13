@@ -102,7 +102,7 @@ export default function NewBlog() {
   };
 
   const handleOnBlogChange = useCallback(async () => {
-    fetch("http://cityplot.io:8055/items/category/")
+    fetch("https://cityplot.io:8055/items/category/")
       .then((response) => response.json())
       .then((data) => {
         console.log(data.data, "categoryyyyyyyyyy");
@@ -115,7 +115,7 @@ export default function NewBlog() {
 
   useEffect(() => {
     handleOnBlogChange();
-    fetch("http://cityplot.io:8055/items/blogs/")
+    fetch("https://cityplot.io:8055/items/blogs/")
       .then((response) => response.json())
       .then((data) => {
         console.log(data.data, "*****************");
@@ -211,7 +211,7 @@ export default function NewBlog() {
                   <Card fullWidth key={post.id} style={{ marginTop: "5%" }}>
                     <CardMedia
                       sx={{ height: 350 }}
-                      image={`http://cityplot.io:8055/assets/${post.image}`}
+                      image={`https://cityplot.io:8055/assets/${post.image}`}
                       title="green iguana"
                     />
                     <CardContent>
@@ -352,7 +352,7 @@ export default function NewBlog() {
                 <Card sx={{ maxWidth: 450 }}>
                   <CardMedia
                     sx={{ height: 240 }}
-                    image={`http://cityplot.io:8055/assets/${post.image}`}
+                    image={`https://cityplot.io:8055/assets/${post.image}`}
                     title={post.title}
                   />
 
