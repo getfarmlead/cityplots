@@ -21,7 +21,7 @@ export default function Blog() {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   useEffect(() => {
-    fetch(`http://43.204.110.52:8055/items/blogs/`)
+    fetch(`http://cityplot.io:8055/items/blogs/`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data.data, "dataaaaaaaa");
@@ -81,7 +81,7 @@ export default function Blog() {
                     {selectedPost.title}
                   </Typography>
                   <img
-                    src={`http://43.204.110.52:8055/assets/${selectedPost.image}`}
+                    src={`http://cityplot.io:8055/assets/${selectedPost.image}`}
                     className="blog-img"
                     alt={selectedPost.title}
                   />
@@ -200,7 +200,7 @@ export default function Blog() {
                 </p>
 
                 <img
-                  src={`http://43.204.110.52:8055/assets/${post.image}`}
+                  src={`http://cityplot.io:8055/assets/${post.image}`}
                   className="blog-img"
                   alt={post.title}
                 />
@@ -314,7 +314,7 @@ export default function Blog() {
               <Card sx={{ maxWidth: 450 }}>
                 <CardMedia
                   sx={{ height: 240 }}
-                  image={`http://43.204.110.52:8055/assets/${post.image}`}
+                  image={`http://cityplot.io:8055/assets/${post.image}`}
                   title={post.title}
                 />
                 <CardContent sx={{ height: 220 }}>

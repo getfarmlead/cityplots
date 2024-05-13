@@ -800,11 +800,11 @@ video.img-fluid {
   max-width: 100%;
   width: 100%;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .fingerprint video.img-fluid {
     margin-left: -40%;
   }
-}
+} */
 .city_video {
   position: relative;
   width: 100%;
@@ -1020,9 +1020,24 @@ img.phone_icon {
   display: block;
   padding: 5px;
 }
+
+.robo_icon {
+  width: 10%;
+  height: auto;
+}
+img.robo_icon {
+  display: block;
+  padding: 5px;
+}
 .footer_icon_block {
   right: 0;
   top: 60%;
+  position: fixed;
+  z-index: 98;
+  color: #fff;
+}
+.footer_robo_icon_block {
+  top: 78%;
   position: fixed;
   z-index: 98;
   color: #fff;

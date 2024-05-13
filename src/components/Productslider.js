@@ -205,7 +205,7 @@ function Productslider() {
 
       <div className="side_product_slider" data-aos="fade-up">
         <Container className="absolute_video">
-          <Row className="align-items-right" style={{ marginLeft: "10%" }}>
+          <Row className="align-items-right" >
             <Col md={6}>
               {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
               <div ref={ref2}>
