@@ -96,174 +96,359 @@ function Productslider() {
 
   return (
     <>
-      <div className="product_slider2" data-aos="fade-up">
-        <Container>
-          <Row>
-            <Col className="p-0">
-              <div className="city_video">
-                <div className="content">
-                  <div ref={ref}>
-                    {isVisible && (
-                      <Typist className="no-cursor">
-                        <h2>
-                          Discover Your Dream Plot with
-                          <span> Cityplots</span>
-                        </h2>
-                      </Typist>
-                    )}
-                  </div>
+      <div className="web-view">
+        <div className="product_slider2" data-aos="fade-up">
+          <Container>
+            <Row>
+              <Col className="p-0">
+                <div className="city_video">
+                  <div className="content">
+                    <div ref={ref}>
+                      {isVisible && (
+                        <Typist className="no-cursor">
+                          <h2>
+                            Discover Your Dream Plot with
+                            <span> Cityplots</span>
+                          </h2>
+                        </Typist>
+                      )}
+                    </div>
 
-                  <p>
-                    Cityplots is not your typical organization next door. We are
-                    a pioneering tech company that is revolutionizing the way
-                    people find and purchase plots. Combining our passion to
-                    simplify property hunting with cutting-edge technology, we
-                    have developed a powerful suite of tools. Our services
-                    enhance your plot-hunting experience.
-                  </p>
+                    <p>
+                      Cityplots is not your typical organization next door. We
+                      are a pioneering tech company that is revolutionizing the
+                      way people find and purchase plots. Combining our passion
+                      to simplify property hunting with cutting-edge technology,
+                      we have developed a powerful suite of tools. Our services
+                      enhance your plot-hunting experience.
+                    </p>
+                  </div>
+                  <div className="video-container">
+                    <video autoPlay muted loop className="video-background">
+                      <source
+                        src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/city2.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
-                <div className="video-container">
-                  <video autoPlay muted loop className="video-background">
-                    <source
-                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/city2.mp4"
-                      type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
 
-      <div className="side_product_slider" data-aos="fade-up">
-        <Container className="absolute_video">
-          <Row className="align-items-center">
-            <Col md={6}>
-              {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
-              <div ref={ref1}>
-                {pioneer && (
-                  <Typist className="no-cursor">
-                    <h2>Pioneering Technology Delivered to Your Fingertips</h2>
-                  </Typist>
-                )}
-              </div>
-              <Row>
-                <Col>
-                  <div className="paracontent" style={{ marginTop: "30px" }}>
-                    <div className="icon">
-                      <img src={Ellipse} className="img-fluid" />
+      <div className="mobile-view">
+        <div className="product_slider2" data-aos="fade-up">
+          <Container>
+            <Row>
+              <Col className="p-0">
+                <div className="city_video">
+                  <div className="content">
+                    <div ref={ref}>
+                      {isVisible && (
+                        <Typist className="no-cursor">
+                          <h2>
+                            Discover Your Dream Plot with
+                            <span> Cityplots</span>
+                          </h2>
+                        </Typist>
+                      )}
                     </div>
-                    <div className="iconpara">
-                      <p>
-                        We leverage the latest advancements in technology to
-                        provide you with an unrivaled experience.
-                      </p>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-              <br />
-              <Row>
-                <Col>
-                  <div className="paracontent">
-                    <div className="icon">
-                      <img src={Ellipse} className="img-fluid" />
-                    </div>
-                    <div className="iconpara">
-                      <p>
-                        Our innovative approach sets us apart from traditional
-                        companies.
-                      </p>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
 
-        <Container fluid>
-          <Row>
-            <Col className="p-0">
-              <div className="banner_resize">
-                <div className="fingerprint">
-                  <video muted loop autoPlay className="img-fluid">
-                    <source
-                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/fingerprintvdo.mp4"
-                      type="video/mp4"
-                      className="img-fluid"
-                    />
-                  </video>
+                    <p>
+                      Cityplots is not your typical organization next door. We
+                      are a pioneering tech company that is revolutionizing the
+                      way people find and purchase plots. Combining our passion
+                      to simplify property hunting with cutting-edge technology,
+                      we have developed a powerful suite of tools. Our services
+                      enhance your plot-hunting experience.
+                    </p>
+                  </div>
+                  <div className="video-container">
+                    <video autoPlay muted loop className="video-background">
+                      <source
+                        src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/City+Mobile.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
 
-      <div className="side_product_slider" data-aos="fade-up">
-        <Container className="absolute_video">
-          <Row className="align-items-right" >
-            <Col md={6}>
-              {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
-              <div ref={ref2}>
-                {blockchain && (
-                  <Typist className="no-cursor">
-                    <h2>
-                      {" "}
-                      Blockchain:{" "}
-                      <span style={{ whiteSpace: "nowrap" }}>
-                        Securing Your
-                      </span>
-                      <br />
-                      <span style={{ whiteSpace: "nowrap" }}>
-                        Investment with{" "}
-                      </span>{" "}
-                      Transparency
-                    </h2>
-                  </Typist>
-                )}
-              </div>
-              <Row>
-                <Col>
-                  <div className="paracontent" style={{ marginTop: "30px" }}>
-                    <div className="iconpara">
-                      <p>
-                        With blockchain, you can trust that your information and
-                        legal documentation are immutable and tamper-proof,
-                        ensuring a safe and transparent transaction.
-                      </p>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-              <br />
-              <Row></Row>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container fluid>
-          <Row>
-            <Col className="p-0">
-              <div className="banner_resize">
-                <div className="fingerprint">
-                  <video muted loop autoPlay className="img-fluid">
-                    <source
-                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Blockchain+animation+Final.mp4"
-                      type="video/mp4"
-                      className="img-fluid"
-                    />
-                  </video>
+      <div className="web-view">
+        <div className="side_product_slider" data-aos="fade-up">
+          <Container className="absolute_video">
+            <Row className="align-items-center">
+              <Col md={6}>
+                {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
+                <div ref={ref1}>
+                  {pioneer && (
+                    <Typist className="no-cursor">
+                      <h2>
+                        Pioneering Technology Delivered to Your Fingertips
+                      </h2>
+                    </Typist>
+                  )}
                 </div>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+                <Row>
+                  <Col>
+                    <div className="paracontent" style={{ marginTop: "30px" }}>
+                      <div className="icon">
+                        <img src={Ellipse} className="img-fluid" />
+                      </div>
+                      <div className="iconpara">
+                        <p>
+                          We leverage the latest advancements in technology to
+                          provide you with an unrivaled experience.
+                        </p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+                <br />
+                <Row>
+                  <Col>
+                    <div className="paracontent">
+                      <div className="icon">
+                        <img src={Ellipse} className="img-fluid" />
+                      </div>
+                      <div className="iconpara">
+                        <p>
+                          Our innovative approach sets us apart from traditional
+                          companies.
+                        </p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container fluid>
+            <Row>
+              <Col className="p-0">
+                <div className="banner_resize">
+                  <div className="fingerprint">
+                    <video muted loop autoPlay className="img-fluid">
+                      <source
+                        src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/fingerprintvdo.mp4"
+                        type="video/mp4"
+                        className="img-fluid"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
 
+      <div className="mobile-view">
+        <div className="side_product_slider" data-aos="fade-up">
+          <Container className="absolute_video">
+            <Row className="align-items-center">
+              <Col md={6}>
+                {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
+                <div ref={ref1}>
+                  {pioneer && (
+                    <Typist className="no-cursor">
+                      <h2>
+                        Pioneering Technology Delivered to Your Fingertips
+                      </h2>
+                    </Typist>
+                  )}
+                </div>
+                <Row>
+                  <Col>
+                    <div className="paracontent" style={{ marginTop: "30px" }}>
+                      <div className="icon">
+                        <img src={Ellipse} className="img-fluid" />
+                      </div>
+                      <div className="iconpara">
+                        <p>
+                          We leverage the latest advancements in technology to
+                          provide you with an unrivaled experience.
+                        </p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+                <br />
+                <Row>
+                  <Col>
+                    <div className="paracontent">
+                      <div className="icon">
+                        <img src={Ellipse} className="img-fluid" />
+                      </div>
+                      <div className="iconpara">
+                        <p>
+                          Our innovative approach sets us apart from traditional
+                          companies.
+                        </p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container fluid>
+            <Row>
+              <Col className="p-0">
+                <div className="banner_resize">
+                  <div className="mobile-fingerprint">
+                    <video muted loop autoPlay className="img-fluid">
+                      <source
+                        src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/FIngerprint+Mobiles.mp4"
+                        type="video/mp4"
+                        className="img-fluid"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+
+      <div className="web-view">
+        <div className="side_product_slider" data-aos="fade-up">
+          <Container className="absolute_video">
+            <Row className="align-items-right">
+              <Col md={6}>
+                {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
+                <div ref={ref2}>
+                  {blockchain && (
+                    <Typist className="no-cursor">
+                      <h2>
+                        {" "}
+                        Blockchain:{" "}
+                        <span style={{ whiteSpace: "nowrap" }}>
+                          Securing Your
+                        </span>
+                        <br />
+                        <span style={{ whiteSpace: "nowrap" }}>
+                          Investment with{" "}
+                        </span>{" "}
+                        Transparency
+                      </h2>
+                    </Typist>
+                  )}
+                </div>
+                <Row>
+                  <Col>
+                    <div className="paracontent" style={{ marginTop: "30px" }}>
+                      <div className="iconpara">
+                        <p>
+                          With blockchain, you can trust that your information
+                          and legal documentation are immutable and
+                          tamper-proof, ensuring a safe and transparent
+                          transaction.
+                        </p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+                <br />
+                <Row></Row>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container fluid>
+            <Row>
+              <Col className="p-0">
+                <div className="banner_resize">
+                  <div className="fingerprint">
+                    <video muted loop autoPlay className="img-fluid">
+                      <source
+                        src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Blockchain+animation+Final.mp4"
+                        type="video/mp4"
+                        className="img-fluid"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+
+      <div className="mobile-view">
+        <div className="side_product_slider" data-aos="fade-up">
+          <Container className="absolute_video">
+            <Row className="align-items-right">
+              <Col md={6}>
+                {/* <h2>Pioneering Technology Delivered to Your Fingertips</h2> */}
+                <div ref={ref2}>
+                  {blockchain && (
+                    <Typist className="no-cursor">
+                      <h2>
+                        {" "}
+                        Blockchain:{" "}
+                        <span style={{ whiteSpace: "nowrap" }}>
+                          Securing Your
+                        </span>
+                        <br />
+                        <span style={{ whiteSpace: "nowrap" }}>
+                          Investment with{" "}
+                        </span>{" "}
+                        Transparency
+                      </h2>
+                    </Typist>
+                  )}
+                </div>
+                <Row>
+                  <Col>
+                    <div className="paracontent" style={{ marginTop: "30px" }}>
+                      <div className="iconpara">
+                        <p>
+                          With blockchain, you can trust that your information
+                          and legal documentation are immutable and
+                          tamper-proof, ensuring a safe and transparent
+                          transaction.
+                        </p>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+                <br />
+                <Row></Row>
+              </Col>
+            </Row>
+          </Container>
+
+          <Container fluid>
+            <Row>
+              <Col className="p-0">
+                <div className="banner_resize">
+                  <div className="mobile-fingerprint">
+                    <video muted loop autoPlay className="img-fluid">
+                      <source
+                        src="	https://cityplotsimages.s3.ap-south-1.amazonaws.com/Block+chain+Mobiles.mp4"
+                        type="video/mp4"
+                        className="img-fluid"
+                      />
+                    </video>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
       <div className="side_product_slider" data-aos="fade-up">
         <Container className="absolute_video">
           <Row className="align-items-center">
@@ -394,7 +579,16 @@ function Productslider() {
             </Col>
             <Col>
               <div className="banner_resize">
-                <img src={product_slider5} className="img-fluid" />
+                {/* <img src={product_slider5} className="img-fluid" /> */}
+                <div className="mobile-fingerprint">
+                  <video muted loop autoPlay className="img-fluid">
+                    <source
+                      src="https://cityplotsimages.s3.ap-south-1.amazonaws.com/Phone1+Mobile.mp4"
+                      type="video/mp4"
+                      className="img-fluid"
+                    />
+                  </video>
+                </div>
               </div>
             </Col>
           </Row>

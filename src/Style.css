@@ -50,7 +50,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   background: var(--black);
 } */
 .footer {
-  padding: 0px 0 50px 0;
+  padding: 100px 0 50px 0;
 }
 .socialcopy {
   padding: 1% 20%;
@@ -520,7 +520,7 @@ svg.logo-setting2 {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  margin-top: 0.5rem;
+  margin-top: 3rem;
 }
 
 .side_product_slider7 {
@@ -800,11 +800,14 @@ video.img-fluid {
   max-width: 100%;
   width: 100%;
 }
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .fingerprint video.img-fluid {
     margin-left: -40%;
   }
-} */
+  .mobile-fingerprint video.img-fluid {
+    margin-left: 0%;
+  }
+}
 .city_video {
   position: relative;
   width: 100%;
@@ -1020,24 +1023,9 @@ img.phone_icon {
   display: block;
   padding: 5px;
 }
-
-.robo_icon {
-  width: 10%;
-  height: auto;
-}
-img.robo_icon {
-  display: block;
-  padding: 5px;
-}
 .footer_icon_block {
   right: 0;
   top: 60%;
-  position: fixed;
-  z-index: 98;
-  color: #fff;
-}
-.footer_robo_icon_block {
-  top: 78%;
   position: fixed;
   z-index: 98;
   color: #fff;
@@ -1202,4 +1190,32 @@ img.robo_icon {
 
 .block-paracontent {
   text-align: right;
+}
+@media screen and (min-width: 325px) and (max-width: 425px) {
+  .col {
+    flex: auto !important;
+  }
+}
+.web-view {
+  display: inline;
+}
+.mobile-view {
+  display: none;
+}
+@media screen and (min-width: 426px) and (max-width: 1440px) {
+  .web-view {
+    display: inline;
+  }
+  .mobile-view {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .web-view {
+    display: none;
+  }
+  .mobile-view {
+    display: inline;
+  }
 }
