@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Modal from 'react-bootstrap/Modal';
 // import logo from '../images/logo.png';
 import new_logo from "../images/new_logo.png";
 import home from "../images/home.svg";
@@ -15,7 +16,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { RiContactsLine } from "react-icons/ri";
-import footerlogo from "../images/footerlogo.png";
+import ModalForm from "./ModalForm.js";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -33,9 +34,9 @@ function Header() {
               <Navbar expand="lg" className="is-sticky">
                 <Container fluid>
                   <Navbar.Brand href="/">
-                    <img src={new_logo} className="header_logo" />
+                    <img src={new_logo} className="header_logo" alt=""/>
                   </Navbar.Brand>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                  <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                   <Navbar.Collapse id="basic-navbar-nav">
                     <Nav activeKey="/" className="me-auto-right navbar-nav">
                       <nav>
@@ -44,22 +45,27 @@ function Header() {
                           className="nav-link"
                           to="/"
                         >
-                          <img src={home} className="logo-setting" />
+                          <img src={home} className="logo-setting" alt=""/>
                           Home
                         </Link>
                       </nav>
                       <nav>
                         <Link className="nav-link" to="/about">
-                          <img src={about} className="logo-setting" />
+                          <img src={about} className="logo-setting" alt=""/>
                           About
                         </Link>
                       </nav>
-                      <nav>
-                        <Link className="nav-link" to="/">
-                          <img src={setting} className="logo-setting" />
+                      {/* <nav>
+                        <Link className="nav-link" to="/ongoingproject">
+                          <img src={setting} className="logo-setting" alt=""/>
                           Services
                         </Link>
-                      </nav>
+                      </nav> */}
+                      <NavDropdown title="Service" data-bs-theme="light">
+                        <NavDropdown.Item href="ongoingproject" id="nav-dropdown">Resdential</NavDropdown.Item>  
+                        <NavDropdown.Item href="" id="nav-dropdown">commercial</NavDropdown.Item>
+                        <NavDropdown.Item href="" id="nav-dropdown">Industrial</NavDropdown.Item>
+                      </NavDropdown>
                       <nav>
                         <Link className="nav-link" to="/">
                           <IoNewspaperOutline className="logo-setting2" />
@@ -89,6 +95,20 @@ function Header() {
                       <Link
                         className="nav-link"
                         to="#"
+                        onClick={handleShow}
+                      >
+                        <div className="booknow_btn">
+                          Book Now
+                          <span>
+                            <img src={social} alt=""/>
+                          </span>
+                        </div>
+                      </Link>
+                    </nav>
+                    <nav>
+                      <Link
+                        className="nav-link"
+                        to="#"
                         onClick={() =>
                           window.location.replace("/#social-network")
                         }
@@ -96,7 +116,7 @@ function Header() {
                         <div className="social_btn">
                           Social Networks
                           <span>
-                            <img src={social} />
+                            <img src={social} alt=""/>
                           </span>
                         </div>
                       </Link>
@@ -108,6 +128,16 @@ function Header() {
           </div>
         </div>
       </div>
+      <Modal show={show} onHide={handleClose} animation={false} size="lg"
+      centered aria-labelledby="contained-modal-title-vcenter">
+        <Modal.Body closeButton>
+          <button
+            className={"btn-close closeBtn"}
+            onClick={handleClose}
+          ></button>
+          <ModalForm/>
+        </Modal.Body>
+      </Modal>
     </>
   );
 }

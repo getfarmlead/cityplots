@@ -4,14 +4,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import footerlogo from "../images/cityplots new logo.png";
 import Button from "react-bootstrap/Button";
-import facebookic from "../images/facebookic.svg";
-import instagram from "../images/instagram.svg";
-import twitter from "../images/twitter.svg";
-import youtube from "../images/youtube.svg";
+// import facebookic from "../images/facebookic.svg";
+// import instagram from "../images/instagram.svg";
+// import twitter from "../images/twitter.svg";
+// import youtube from "../images/youtube.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { FaLinkedinIn } from "react-icons/fa";
+// import { FaLinkedinIn } from "react-icons/fa";
 import social1 from "../images/social/socialmeaiaicon-01.png";
 import social2 from "../images/social/socialmeaiaicon-02.png";
 import social3 from "../images/social/socialmeaiaicon-03.png";
@@ -425,11 +425,11 @@ function Footer() {
       </div>
 
       <div className="footer_icon_block">
-        <a href="tel:7092652333" a target="_blank">
-          <img src={phone} className="phone_icon" />
+        <a href="tel:7092652333" a target="_blank" rel="noreferrer">
+          <img src={phone} className="phone_icon" alt=""/>
         </a>
-        <a href="https://wa.me/7092652333" a target="_blank">
-          <img src={Whatsapp} className="phone_icon" />
+        <a href="https://wa.me/7092652333" a target="_blank" rel="noreferrer">
+          <img src={Whatsapp} className="phone_icon" alt=""/>
         </a>
       </div>
 

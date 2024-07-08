@@ -19,7 +19,7 @@ function Contactcontent() {
 
     return (
         <>
-        <div class="contact_section">
+        <div class="contact_section" style={{paddingTop: "100px"}}>
             <div class="abt">
                 <Container>
                     <Row>

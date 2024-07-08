@@ -9,6 +9,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Blog from "./components/Blog.js";
 import NewBlog from './components/NewBlog.js';
+import OngoingProject from './components/landingPage/OngoingProject.js';
+import ContactPage from './components/pages/about/Contactcontent.js'
 
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/About" element={<About />}></Route>
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/newblog" element={<NewBlog />} />
+        <Route path="/ongoingproject" element={<OngoingProject />} />
+        <Route path="/contact-us" element={<ContactPage/>} />
       </Routes>
       <Footer/>
     </div>
