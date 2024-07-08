@@ -60,8 +60,14 @@ function Amenities() {
                                 <Typist className="no-cursor">
                                     <h2>
                                         <span>Top Amenities</span><br></br>
-                                        Invest in Cityplots for Your Home in <span>Maraimalai Nagar</span>
                                     </h2>
+                                    <p style={{fontSize:"30px", fontWeight:"bolder", textTransform:"uppercase"}}>
+                                        Invest in Cityplots for Your Home in 
+                                                    <span style={{
+                                                        color: "#61ff00",
+                                                        backgroundColor: "transparent",
+                                                    }}> Maraimalai Nagar</span>
+                                    </p>
                                 </Typist>
                             )}
                         </div>

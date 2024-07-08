@@ -61,7 +61,7 @@ function DetailsSection() {
                       {isVisible && (
                         <Typist className="no-cursor">
                           <h2>
-                          Cityplots in MaraimalaiNagar: The Perfect Investment for <span>Modern Living</span>
+                          The Perfect Investment for <span>Modern Living</span>
                           </h2>
                         </Typist>
                       )}

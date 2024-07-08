@@ -399,6 +399,7 @@ svg.logo-setting2 {
   display: block; /* Ensures image fills entire container */
   width: 100%;
   height: auto;
+  margin-top: -20.75%;
 }
 
 .text-overlay {
@@ -859,7 +860,7 @@ video.img-fluid {
   left: 0;
   width: 100%;
   object-fit: cover;
-  margin-top: -30.75%;
+  margin-top: -20.75%;
   /* transform: translate(-10%, -40%);
   position: absolute; */
 }
@@ -887,7 +888,7 @@ video.img-fluid {
     margin-top: -17.5% !important;
   }
   .city_video .img-landingpage {
-    margin-top: -35.5% !important;
+    margin-top: -20.5% !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -895,7 +896,7 @@ video.img-fluid {
     margin-top: -18.75%;
   }
   .city_video .img-landingpage {
-    margin-top: -40.75%;
+    margin-top: -20.75%;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 767px) {
@@ -915,7 +916,7 @@ video.img-fluid {
     margin-top: -22.5%;
   }
   .city_video .img-landingpage {
-    margin-top: -62.5%;
+    margin-top: -22.5%;
   }
 }
 /* @media (min-width: 426px) and (max-width: 1024px) {

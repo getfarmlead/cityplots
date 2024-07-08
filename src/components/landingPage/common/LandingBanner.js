@@ -36,28 +36,24 @@ function LandingBanner() {
                                         </h1> */}
                                         <Typist className="no-cursor" avgTypingDelay={70}>
                                             <h2>
-                                            Cityplots in Maraimalai Nagar: The Perfect Investment for {" "}
+                                            Cityplots in {" "}
                                                 <span
                                                     style={{
                                                         color: "#61ff00",
                                                         backgroundColor: "#61ff00",
                                                     }}
                                                 >
-                                                    Modern Living
+                                                    Maraimalai Nagar
                                                 </span>
                                             </h2>{" "}
                                         </Typist>
                                         {/* <img src={mainbanner} className="img-fluid" alt=''/> */}
                                     </div>
-                                    <div className="container">
+                                    {/* <div className="container">
                                         <div className="image-container">
-                                            <div className="overlay-image" style={{marginTop: "200px"}}>
+                                            <div className="overlay-image" >
+                                                
                                                 <img
-                                                    src={mainbanner}
-                                                    className="img-landingpage"
-                                                    alt="Main Banner"
-                                                />
-                                                {/* <img
                                                     src={comment1}
                                                     className="small-image comment1" // Add a class for styling
                                                     alt="comment 1"
@@ -66,15 +62,20 @@ function LandingBanner() {
                                                     src={comment2}
                                                     className="small-image comment2" // Add a class for styling
                                                     alt="comment 2"
-                                                /> */}
+                                                />
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </div>
+                <img
+                                                    src={mainbanner}
+                                                    className="img-landingpage"
+                                                    alt="Main Banner"
+                                                />
             </div>
         </>
     )

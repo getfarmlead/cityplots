@@ -62,8 +62,8 @@ function Header() {
                         </Link>
                       </nav> */}
                       <NavDropdown title="Service" data-bs-theme="light">
-                        <NavDropdown.Item href="ongoingproject" id="nav-dropdown">Resdential</NavDropdown.Item>  
-                        <NavDropdown.Item href="" id="nav-dropdown">commercial</NavDropdown.Item>
+                        <NavDropdown.Item href="ongoingproject" id="nav-dropdown">Residential</NavDropdown.Item>  
+                        <NavDropdown.Item href="" id="nav-dropdown">Commercial</NavDropdown.Item>
                         <NavDropdown.Item href="" id="nav-dropdown">Industrial</NavDropdown.Item>
                       </NavDropdown>
                       <nav>
@@ -128,7 +128,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <Modal show={show} onHide={handleClose} animation={false} size="lg"
+      <Modal id="modal-index" show={show} onHide={handleClose} animation={false} size="lg"
       centered aria-labelledby="contained-modal-title-vcenter">
         <Modal.Body closeButton>
           <button

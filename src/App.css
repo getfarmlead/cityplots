@@ -91,6 +91,10 @@
 
 /* modal form styles */
 
+#modal-index {
+  z-index: 100001 !important;
+}
+
 .closeBtn{
   position: absolute;
   top: 15px;
