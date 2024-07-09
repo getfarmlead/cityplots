@@ -72,10 +72,10 @@ function LandingBanner() {
                     </Container>
                 </div>
                 <img
-                                                    src={mainbanner}
-                                                    className="img-landingpage"
-                                                    alt="Main Banner"
-                                                />
+                    src={mainbanner}
+                    className="img-landingpage"
+                    alt="Main Banner"
+                />
             </div>
         </>
     )
