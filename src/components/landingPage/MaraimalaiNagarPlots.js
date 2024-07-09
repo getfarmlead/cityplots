@@ -6,7 +6,7 @@ import NearByLocation from './common/NearByLocation';
 import LandingPageForm from './common/LandingPageForm';
 import { Helmet } from 'react-helmet';
 
-function OngoingProject() {
+function MaraimalaiNagarPlots() {
   return (
     <div>
         <Helmet>
@@ -27,4 +27,4 @@ function OngoingProject() {
   )
 }
 
-export default OngoingProject
+export default MaraimalaiNagarPlots

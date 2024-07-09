@@ -56,13 +56,13 @@ function Header() {
                         </Link>
                       </nav>
                       {/* <nav>
-                        <Link className="nav-link" to="/ongoingproject">
+                        <Link className="nav-link" to="/maraimalainagar-plots">
                           <img src={setting} className="logo-setting" alt=""/>
                           Services
                         </Link>
                       </nav> */}
                       <NavDropdown title="Service" data-bs-theme="light">
-                        <NavDropdown.Item href="ongoingproject" id="nav-dropdown">Residential</NavDropdown.Item>  
+                        <NavDropdown.Item href="maraimalainagar-plots" id="nav-dropdown">Residential</NavDropdown.Item>  
                         <NavDropdown.Item href="" id="nav-dropdown">Commercial</NavDropdown.Item>
                         <NavDropdown.Item href="" id="nav-dropdown">Industrial</NavDropdown.Item>
                       </NavDropdown>

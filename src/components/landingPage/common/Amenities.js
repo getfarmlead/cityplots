@@ -108,7 +108,7 @@ function Amenities() {
                             <img src={unlockicon4} alt="" className="" />
                             <div className="amenities-content-rgt">
                                 <h3>Street Lights</h3>
-                                <p> Lighting up the streets makes them safer and easier to use.</p>
+                                <p>Lighting up the streets makes them safer and easier to use</p>
                             </div>
                         </div>
                         <div className="amenities-section col-xs-12 col-md-12 col-xl-12">
@@ -122,7 +122,7 @@ function Amenities() {
                             <img src={unlockicon6} alt="" className="" />
                             <div className="amenities-content-rgt">
                                 <h3>24/7 CCTV Surveillance</h3>
-                                <p>Continuous safety with CCTV cameras watching all the time.</p>
+                                <p>Continuous safety with CCTV cameras watching all the time</p>
                             </div>
                         </div>
                         <div className="amenities-section col-xs-12 col-md-12 col-xl-12">
@@ -136,7 +136,7 @@ function Amenities() {
                             <img src={unlockicon8} alt="" className="" />
                             <div className="amenities-content-rgt">
                                 <h3>Garden</h3>
-                                <p>Beautifully developed grounds where you can relax and take it easy.</p>
+                                <p>Beautifully developed grounds where you can relax and take it easy</p>
                             </div>
                         </div>
                         <div className="amenities-section col-xs-12 col-md-12 col-xl-12">

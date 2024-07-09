@@ -36,7 +36,7 @@ function LandingBanner() {
                                         </h1> */}
                                         <Typist className="no-cursor" avgTypingDelay={70}>
                                             <h2>
-                                            Cityplots in {" "}
+                                            Plots in {" "}
                                                 <span
                                                     style={{
                                                         color: "#61ff00",
