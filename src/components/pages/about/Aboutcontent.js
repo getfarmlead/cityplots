@@ -16,6 +16,7 @@ import unlockicon3 from "../../../images/unlockicon3.png";
 import unlockicon4 from "../../../images/unlockicon4.png";
 import unlockicon5 from "../../../images/unlockicon5.png";
 import unlockicon6 from "../../../images/unlockicon6.png";
+import { Helmet } from "react-helmet";
 
 function Aboutcontent() {
   useEffect(() => {
@@ -25,6 +26,13 @@ function Aboutcontent() {
 
   return (
     <>
+      <Helmet>
+          <link rel="canonical" href="https://www.cityplots.io/about"/>
+          <title>Cityplots Mobile App Reliable Property Solution Partner</title>
+          <meta name="description" content="Cityplots Mobile App About us - how we utilize advanced technology to provide optimal investment opportunities and comprehensive property solutions." />
+          <meta property="og:description" content="Cityplots Mobile App About us - how we utilize advanced technology to provide optimal investment opportunities and comprehensive property solutions." />
+          <meta name="keywords" content="CMDA Approved Residential Plots, Ultra-Luxury Villas, Premium Villa for Sale, Plot for Sale, Land for Sale, CMDA Approved plots, Approved plots near me, Residential projects, Commercial Projects, Industrial Projets, Top Builders, Book Villas, Independent Villas for sale, Cityplots, Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, Smart Plots" />
+      </Helmet>
       <div class="about_sectiom">
         <div class="abt">
           <div className="product_slider9" data-aos="fade-up">
@@ -32,10 +40,10 @@ function Aboutcontent() {
               <Row>
                 <Col>
                   <h3>Cityplots:</h3>
-                  <h2>
+                  <h1>
                     Your Reliable Property{" "}
                     <span className="">Solution Partner</span>
-                  </h2>
+                  </h1>
                   <p>
                     With over a decade of experience as a technology-driven
                     firm, we smoothly blend time-honored processes with
@@ -54,7 +62,7 @@ function Aboutcontent() {
               </Row>
             </Container>
           </div>
-          <div className="product_slider10" data-aos="fade-up">
+          {/* <div className="product_slider10" data-aos="fade-up">
             <Container>
               <Row>
                 <Col>
@@ -82,7 +90,7 @@ function Aboutcontent() {
                 </Col>
               </Row>
             </Container>
-          </div>
+          </div> */}
           <br />
           <div className="side_product_slider4" data-aos="fade-up">
             <Container>

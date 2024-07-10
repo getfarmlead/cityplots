@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import Blog from "./components/Blog.js";
 import NewBlog from './components/NewBlog.js';
 import MaraimalaiNagarPlots from './components/landingPage/MaraimalaiNagarPlots.js';
-import ContactPage from './components/pages/about/Contactcontent.js'
+import ContactPage from './components/pages/about/ContactPage.js'
 import { Helmet } from 'react-helmet';
 
 
@@ -20,10 +20,9 @@ function App() {
     <div className="App">
     <Header/>
     <Helmet>
-          <link rel="canonical" href="https://www.cityplots.io/" />
+          <link rel="canonical" href="https://www.cityplots.io/"/>
           <title>
-            Mobile Apps For Property Investors - Online AI Investment Portal |
-            Cityplots
+            Mobile Apps For Property Investors - Online AI Investment Portal | Cityplots
           </title>
           <meta
             name="description"

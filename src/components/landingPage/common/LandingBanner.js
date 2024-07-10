@@ -35,7 +35,7 @@ function LandingBanner() {
                                             </span>
                                         </h1> */}
                                         <Typist className="no-cursor" avgTypingDelay={70}>
-                                            <h2>
+                                            <h1 className='main-title'>
                                             Plots in {" "}
                                                 <span
                                                     style={{
@@ -45,7 +45,7 @@ function LandingBanner() {
                                                 >
                                                     Maraimalai Nagar
                                                 </span>
-                                            </h2>{" "}
+                                            </h1>{" "}
                                         </Typist>
                                         {/* <img src={mainbanner} className="img-fluid" alt=''/> */}
                                     </div>

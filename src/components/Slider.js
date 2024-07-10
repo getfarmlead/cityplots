@@ -37,7 +37,7 @@ function Slider() {
                       </span>
                     </h2> */}
                     <Typist className="no-cursor" avgTypingDelay={70}>
-                      <h2>
+                      <h1>
                       LEADING 1ST AI DRIVEN
                         <br />
                         INVESTMENT{" "}
@@ -49,7 +49,7 @@ function Slider() {
                         >
                           PORTAL
                         </span>
-                      </h2>{" "}
+                      </h1>{" "}
                     </Typist>
                   </div>
                   <div className="container">

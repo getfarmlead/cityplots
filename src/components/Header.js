@@ -81,10 +81,7 @@ function Header() {
                       <nav>
                         <Link
                           className="nav-link"
-                          to="#"
-                          onClick={() =>
-                            window.location.replace("/#footer_section")
-                          }
+                          to="contact-us"
                         >
                           <RiContactsLine className="logo-setting2" />
                           Contact Us

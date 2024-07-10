@@ -93,7 +93,7 @@ const locations = [
     image: chennai,
     city: "Chennai",
     address: [
-      "City Plots - Olympia Cyberspace,Tech Park,",
+      "Cityplots - Olympia Cyberspace,Tech Park,",
       "5th Floor, SIDCO Industrial Estate, Guindy ",
     ],
     address_1: [""],
@@ -105,7 +105,7 @@ const locations = [
     image: bangalore,
     city: "Bengaluru",
     address: [
-      "City Plots - Embassy Signet,5th Floor Kadubeesanahalli Village, Outer Ring Road, Bengaluru, Karnataka-560103.",
+      "Cityplots - Embassy Signet,5th Floor Kadubeesanahalli Village, Outer Ring Road, Bengaluru, Karnataka-560103.",
     ],
     address_1: ["", ""],
     address_2: [""],
@@ -116,7 +116,7 @@ const locations = [
     image: newdelhi,
     city: "New Delhi",
     address: [
-      "City Plots - Thapar House,Gate No.1 Eastern & Central Wing Third Floor , 124 ,Janpath Ln ,",
+      "Cityplots - Thapar House,Gate No.1 Eastern & Central Wing Third Floor , 124 ,Janpath Ln ,",
     ],
     address_1: [" ", ""],
     address_2: ["New Delhi-110001."],
@@ -127,7 +127,7 @@ const locations = [
     image: telugana,
     city: "Telangana",
     address: [
-      "City Plots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,",
+      "Cityplots - 6th Floor, Omega-C Block, Divyasree Building, Hitech City Rd, Kondapur,",
     ],
     address_1: [],
     address_2: ["Telangana-500081."],
@@ -138,7 +138,7 @@ const locations = [
     image: mumbai,
     city: "Mumbai",
     address: [
-      "City Plots - Supreme Business Park,7th floor, Wing B, Behind Lake Castle, Building, Mumbai,",
+      "Cityplots - Supreme Business Park,7th floor, Wing B, Behind Lake Castle, Building, Mumbai,",
     ],
     address_1: [""],
     address_2: ["Maharashtra-400076."],
@@ -197,7 +197,7 @@ function Footer() {
                     <p>#07-01 TUNG ANN ASSOCIATION BUILDING,</p>
                     <p>Singapore - 069541.</p>
                     <p>+91 7092652333</p>
-                    <p>hr@cityplots.io</p>
+                    <p className="main_id">hr@cityplots.io</p>
                   </div>
                 </Col>
 
@@ -313,7 +313,7 @@ function Footer() {
                       organization. We are a pioneering tech firm that is
                       revolutionizing the way people find and purchase plots.
                     </p>
-                    {/* <p><span className="foot_address">Address : </span> City Plots - Olympia Cyberspace
+                    {/* <p><span className="foot_address">Address : </span> Cityplots - Olympia Cyberspace
                                 <br></br>5th Floor, Arulayiammanpet, SIDCO Industrial Estate,<br></br> Guindy, Chennai, Tamil Nadu 600032.</p>
                                 <p><span className="foot_address">Email id : </span>info@cityplots.in</p>
                                 <p><span className="foot_address">WhatsApp Number : </span>+91 7092652333</p> */}
@@ -345,16 +345,10 @@ function Footer() {
                         <div className="footer-list">
                           <ul>
                             <li>
-                              <a href="/">Terms of use</a>
+                              <a href="/">Terms of Conditions</a>
                             </li>
                             <li>
-                              <a href="/">Terms of conditions</a>
-                            </li>
-                            <li>
-                              <a href="/">Privacy policy</a>
-                            </li>
-                            <li>
-                              <a href="/">Cookie policy</a>
+                              <a href="/">Privacy Policy</a>
                             </li>
                           </ul>
                         </div>
@@ -368,35 +362,35 @@ function Footer() {
                         <div className="social-list">
                           <ul>
                             <li>
-                              <a href="https://www.instagram.com/cityplots.io">
-                                <img src={social6} alt="" /> Instagram
+                              <a href="https://www.instagram.com/cityplots.io" target="_blank" rel="noreferrer">
+                                <img src={social6} alt=""/> Instagram
                               </a>
                             </li>
                             <li>
-                              <a href="https://www.facebook.com/cityplots.io">
-                                <img src={social2} alt="" /> Facebook
+                              <a href="https://www.facebook.com/cityplots.io" target="_blank" rel="noreferrer">
+                                <img src={social2} alt=""/> Facebook
                               </a>
                             </li>
                             <li>
-                              <a href="https://twitter.com/cityplots_io">
-                                <img src={social1} alt="" /> Twitter
+                              <a href="https://twitter.com/cityplots_io" target="_blank" rel="noreferrer">
+                                <img src={social1} alt=""/> Twitter
                               </a>
                             </li>
                             <li>
-                              <a href="https://www.youtube.com/@cityplots">
-                                <img src={social3} alt="" /> YouTube
+                              <a href="https://www.youtube.com/@cityplots" target="_blank" rel="noreferrer">
+                                <img src={social3} alt=""/> YouTube
                               </a>
                             </li>
                             <li>
-                              <a href="https://www.linkedin.com/company/cityplots">
+                              <a href="https://www.linkedin.com/company/cityplots" target="_blank" rel="noreferrer">
                                 {/* <FaLinkedinIn className="icon_red"/> */}
-                                <img src={social5} alt="" /> Linkedin
+                                <img src={social5} alt=""/> Linkedin
                               </a>
                             </li>
                             <li>
-                              <a href="https://wa.me/7092652333">
+                              <a href="https://wa.me/7092652333" target="_blank" rel="noreferrer">
                                 {/* <FaLinkedinIn className="icon_red"/> */}
-                                <img src={social4} alt="" /> WhatsApp
+                                <img src={social4} alt=""/> WhatsApp
                               </a>
                             </li>
                           </ul>
@@ -414,7 +408,7 @@ function Footer() {
                 <Col>
                   <div className="socialcopy">
                     <p>
-                      Copyright ©️ CITYPLOTS PRIVATE LIMITED. All Right Reserved
+                      Copyright ©️ CITYPLOTS PRIVATE LIMITED. All Rights Reserved
                     </p>
                   </div>
                 </Col>

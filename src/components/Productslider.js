@@ -466,7 +466,7 @@ function Productslider() {
               </div>
               <Row>
                 <Col>
-                  <div className="paracontent" style={{ marginTop: "30px" }}>
+                  <div className="paracontent" style={{ marginTop: "10px" }}>
                     <div className="icon">
                       <img src={Ellipse} className="img-fluid" />
                     </div>
@@ -543,10 +543,10 @@ function Productslider() {
               </div>
               <p>
                 Our state-of-the-art mobile app is the heart of
-                Cityplots'technological prowess.With its intuitive interface,you
+                Cityplots' technological prowess.With its intuitive interface,you
                 can search for plots based on your preferences,explore detailed
                 information about each plot ,and even connect with our experts
-                for personalized guidance.Embarce the power of technology at
+                for personalized guidance. Embrace the power of technology at
                 your fingertips
               </p>
             </Col>
@@ -570,10 +570,10 @@ function Productslider() {
               </div>
               <p>
                 Our state-of-the-art mobile app is the heart of
-                Cityplots'technological prowess.With its intuitive interface,you
+                Cityplots' technological prowess.With its intuitive interface,you
                 can search for plots based on your preferences,explore detailed
                 information about each plot ,and even connect with our experts
-                for personalized guidance.Embarce the power of technology at
+                for personalized guidance. Embrace the power of technology at
                 your fingertips
               </p>
             </Col>
