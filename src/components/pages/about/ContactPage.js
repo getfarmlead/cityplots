@@ -1,13 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import MapImage from "../../../images/thirukatchu-map.webp";
 import Typist from "react-typist";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useState, useEffect, useRef } from 'react';
 import "react-multi-carousel/lib/styles.css";
 import ContactForm from '../../ContactForm';
+import Email from '../../../images/Icon3.webp'
+import phone from '../../../images/Icon2.webp'
+import location from '../../../images/Icon1.webp'
 
 function ContactPage() {
     useEffect(() => {
@@ -15,10 +17,8 @@ function ContactPage() {
       }, []);
     
       const [isVisible, setIsVisible] = useState(false);
-      const [pioneer, setPioneer] = useState(false);
     
       const ref = useRef(null);
-      const ref1 = useRef(null);
     
       const isInViewport = (element) => {
         const rect = element.getBoundingClientRect();
@@ -38,16 +38,13 @@ function ContactPage() {
           if (isInViewport(ref.current) && !isVisible) {
             setIsVisible(true);
           }
-          if (isInViewport(ref1.current) && !pioneer) {
-            setPioneer(true);
-          }
         };
     
         window.addEventListener("scroll", handleScroll);
         return () => {
           window.removeEventListener("scroll", handleScroll);
         };
-      }, [isVisible, pioneer]);
+      }, [isVisible]);
 
     return (
         <>
@@ -67,11 +64,22 @@ function ContactPage() {
                 </Typist>
             </div>
             <p>Looking for reasonably priced plots in Maraimalai Nagar, Chennai? With its plots for sale in Maraimalai Nagar, Cityplots offers a great opportunity to invest in a premium location at a reasonable price.</p>
+            <ul className='contact-icon'>
+              <li>
+                <img src={Email} alt='mail icon' width="auto" ></img>
+                <a href='mailto:hr@cityplots.io' className='contact-para'>hr@cityplots.io</a>
+              </li>
+              <li>
+                <img src={phone} alt='phone icon' width="auto" ></img>
+                <a href='tel:+917092652333' className='contact-para'>+91 7092652333</a>
+              </li>
+              <li>
+                <img src={location} alt='location icon' width="auto" ></img>
+                <span className='contact-para'>Chennai, Tamilnadu</span>
+              </li>
+            </ul>
             </Col>
             <Col>
-              {/* <div className="banner_resize">
-                <img src={MapImage} className="img-fluid" alt="" style={{width : "85%"}}/>
-              </div> */}
               <ContactForm/>
             </Col>
           </Row>

@@ -92,7 +92,7 @@
 /* modal form styles */
 
 #modal-index {
-  z-index: 100001 !important;
+  z-index: 10000000000 !important;
 }
 
 .closeBtn{

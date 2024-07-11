@@ -27,6 +27,16 @@ function Header() {
   }, []);
   return (
     <>
+    <Modal id="modal-index" show={show} onHide={handleClose} animation={true} size="lg"
+    centered aria-labelledby="contained-modal-title-vcenter">
+      <Modal.Body closeButton>
+        <button
+          className={"btn-close closeBtn"}
+          onClick={handleClose}
+        ></button>
+        <ModalForm/>
+      </Modal.Body>
+    </Modal>
       <div className="header_nav" data-aos="fade-down">
         <div className="cotainer">
           <div className="row">
@@ -57,10 +67,10 @@ function Header() {
                       </nav>
                       {/* <nav>
                         <Link className="nav-link" to="/maraimalainagar-plots">
-                          <img src={setting} className="logo-setting" alt=""/>
-                          Services
+                        <img src={setting} className="logo-setting" alt=""/>
+                        Services
                         </Link>
-                      </nav> */}
+                        </nav> */}
                       <NavDropdown title="Service" data-bs-theme="light">
                         <NavDropdown.Item href="maraimalainagar-plots" id="nav-dropdown">Residential</NavDropdown.Item>  
                         <NavDropdown.Item href="" id="nav-dropdown">Commercial</NavDropdown.Item>
@@ -125,16 +135,6 @@ function Header() {
           </div>
         </div>
       </div>
-      <Modal id="modal-index" show={show} onHide={handleClose} animation={false} size="lg"
-      centered aria-labelledby="contained-modal-title-vcenter">
-        <Modal.Body closeButton>
-          <button
-            className={"btn-close closeBtn"}
-            onClick={handleClose}
-          ></button>
-          <ModalForm/>
-        </Modal.Body>
-      </Modal>
     </>
   );
 }
