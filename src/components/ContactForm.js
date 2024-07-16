@@ -77,14 +77,13 @@ function ContactForm() {
         <div className="App-form">
           <div className='form-container'>
             <form id="contact-form" className="form" onSubmit={handleSubmit}>
-              <input placeholder="Name" type="text" value={name} onChange={handleNameChange}/>
-              <input placeholder="Email" type="email" value={email} onChange={handleEmailChange} />
-              <input placeholder="Phone Number" type="tel" value={phone} onChange={handlePhoneChange}/>
+              <input placeholder="Name" type="text" value={name} onChange={handleNameChange} required/>
+              <input placeholder="Email" type="email" value={email} onChange={handleEmailChange}  required/>
+              <input placeholder="Phone Number" type="tel" value={phone} onChange={handlePhoneChange} required/>
               {!isValid && <span style={{ color: 'red' }}>Invalid phone number</span>}
-              <input placeholder="Location/Area" type="text" value={location} onChange={handleLocationChange}/>
-              <input placeholder="Message" type="text" value={message} onChange={handleMessageChange}/>
+              <input placeholder="Location/Area" type="text" value={location} onChange={handleLocationChange} required/>
+              <input placeholder="Message" type="text" value={message} onChange={handleMessageChange} required/>
               <input disabled={buttonDisabled} type="submit" />
-              {!isValid && <span style={{ color: 'red' }}>Invalid phone number</span>}
             </form>
           </div>
         </div>

@@ -34,7 +34,7 @@ function Aboutcontent() {
           <meta name="description" content="Cityplots Mobile App About us - how we utilize advanced technology to provide optimal investment opportunities and comprehensive property solutions." />
           <meta property="og:description" content="Cityplots Mobile App About us - how we utilize advanced technology to provide optimal investment opportunities and comprehensive property solutions." />
           <meta name="keywords" content="CMDA Approved Residential Plots, Ultra-Luxury Villas, Premium Villa for Sale, Plot for Sale, Land for Sale, CMDA Approved plots, Approved plots near me, Residential projects, Commercial Projects, Industrial Projets, Top Builders, Book Villas, Independent Villas for sale, Cityplots, Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, Smart Plots" />
-          <meta property="og:image" content="https://www.cityplots.io/images/og-images/about"/>
+          <meta property="og:image" content="https://www.cityplots.io/og-images/about.webp"/>
       </Helmet>
       <div class="about_sectiom">
         <div class="abt">

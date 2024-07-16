@@ -57,7 +57,7 @@ function ContactPage() {
           <meta name="description" content="Discover Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, and Smart Plots at Cityplots Chennai, Bangalore."/>
           <meta property="og:description" content="Discover Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, and Smart Plots at Cityplots Chennai, Bangalore."/>
           <meta name="keywords" content="CMDA Approved Residential Plots, Ultra-Luxury Villas, Premium Villa for Sale, Plot for Sale, Land for Sale, CMDA Approved plots, Approved plots near me, Residential projects, Commercial Projects, Industrial Projets, Top Builders, Book Villas, Independent Villas for sale, Cityplots, Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, Smart Plots"/>
-          <meta property="og:image" content="https://www.cityplots.io/images/og-images/contact"/>
+          <meta property="og:image" content="https://www.cityplots.io/og-images/contact.webp"/>
         </Helmet>
         <div className="side_product_slider7 product_slider2" data-aos="fade-up" style={{marginTop: "90px"}}>
         <Container>
