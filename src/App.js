@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './Style.css';
@@ -21,11 +20,21 @@ function App() {
     <Header/>
     <Helmet>
           <link rel="canonical" href="https://www.cityplots.io/"/>
+          <meta property="og:site_name" content="Cityplots" />
+          <meta property="og:url" content="https://www.cityplots.io/" />
           <title>
             Mobile Apps For Property Investors - Online AI Investment Portal | Cityplots
           </title>
           <meta
+            property="og:title"
+            content="Online AI Investment Portal - Mobile Apps For Property Investors | Cityplots"
+          />
+          <meta
             name="description"
+            content="Cityplots - Leading AI Driven Property Investment Portal for Approved Villas/Land/Plots for Sale, Housing Flats residential, commercial and industrial projects."
+          />
+          <meta
+            property="og:description"
             content="Cityplots - Leading AI Driven Property Investment Portal for Approved Villas/Land/Plots for Sale, Housing Flats residential, commercial and industrial projects."
           />
           <meta
@@ -36,17 +45,6 @@ function App() {
             Projects, Industrial Projets, Best Real Estate Developers, Top Builders, Book Villas,
             Independent Villas for sale, Cityplots"
           />
-          <meta
-            property="og:title"
-            content="Online AI Investment Portal - Mobile Apps For Property Investors | Cityplots"
-          />
-          <meta property="og:site_name" content="Cityplots" />
-          <meta property="og:url" content="https://www.cityplots.io/" />
-          <meta
-            property="og:description"
-            content="Cityplots - Leading AI Driven Property Investment Portal for Approved Villas/Land/Plots for Sale, Housing Flats residential, commercial and industrial projects."
-          />
-          <meta property="og:type" content="article" />
           <meta
             property="og:image"
             content="https://www.cityplots.io/cityplots-logo.png"

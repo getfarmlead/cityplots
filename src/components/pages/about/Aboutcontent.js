@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import map from "../../../images/map.png";
-import Carousel from "react-multi-carousel";
+// import map from "../../../images/map.png";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
+// import Tab from "react-bootstrap/Tab";
+// import Tabs from "react-bootstrap/Tabs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import product_slider4 from "../../../images/product_slider4.png";
@@ -28,10 +28,13 @@ function Aboutcontent() {
     <>
       <Helmet>
           <link rel="canonical" href="https://www.cityplots.io/about"/>
+          <meta property="og:url" content="https://www.cityplots.io/about" />
           <title>Cityplots Mobile App Reliable Property Solution Partner</title>
+          <meta property='og:title' content='Cityplots Mobile App Reliable Property Solution Partner'/>
           <meta name="description" content="Cityplots Mobile App About us - how we utilize advanced technology to provide optimal investment opportunities and comprehensive property solutions." />
           <meta property="og:description" content="Cityplots Mobile App About us - how we utilize advanced technology to provide optimal investment opportunities and comprehensive property solutions." />
           <meta name="keywords" content="CMDA Approved Residential Plots, Ultra-Luxury Villas, Premium Villa for Sale, Plot for Sale, Land for Sale, CMDA Approved plots, Approved plots near me, Residential projects, Commercial Projects, Industrial Projets, Top Builders, Book Villas, Independent Villas for sale, Cityplots, Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, Smart Plots" />
+          <meta property="og:image" content="https://www.cityplots.io/images/og-images/about"/>
       </Helmet>
       <div class="about_sectiom">
         <div class="abt">
@@ -123,7 +126,7 @@ function Aboutcontent() {
                 </Col>
                 <Col>
                   <div className="banner_resize">
-                    <img src={product_slider4} className="img-fluid" />
+                    <img src={product_slider4} className="img-fluid" alt="" />
                   </div>
                 </Col>
               </Row>

@@ -51,10 +51,13 @@ function ContactPage() {
         <>
         <Helmet>
           <link rel="canonical" href="https://www.cityplots.io/contact-us"/>
+          <meta property="og:url" content="https://www.cityplots.io/contact-us" />
           <title>Cityplots Contact Us Chennai</title>
+          <meta property='og:title' content='Cityplots Contact Us Chennai'/>
           <meta name="description" content="Discover Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, and Smart Plots at Cityplots Chennai, Bangalore."/>
           <meta property="og:description" content="Discover Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, and Smart Plots at Cityplots Chennai, Bangalore."/>
           <meta name="keywords" content="CMDA Approved Residential Plots, Ultra-Luxury Villas, Premium Villa for Sale, Plot for Sale, Land for Sale, CMDA Approved plots, Approved plots near me, Residential projects, Commercial Projects, Industrial Projets, Top Builders, Book Villas, Independent Villas for sale, Cityplots, Golden Plots, Housing Plots, Villa Plots, Global Plots, Luxury Plots, Smart Plots"/>
+          <meta property="og:image" content="https://www.cityplots.io/images/og-images/contact"/>
         </Helmet>
         <div className="side_product_slider7 product_slider2" data-aos="fade-up" style={{marginTop: "90px"}}>
         <Container>
