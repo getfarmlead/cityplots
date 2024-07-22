@@ -10,11 +10,20 @@ function ModalForm() {
     const [phone, setPhone] = useState("")
     const [message, setMessage] = useState("")
     const [location, setLocation] = useState("")
-    const [isValid, setIsValid] = useState(true);
+    const [isValid, setIsValid] = useState({
+      phone: true,
+      name: true,
+    });
     
 
     const handleNameChange = e => {
-      setName(e.target.value)
+      const { value } = e.target;
+        setName(value);
+        const nameRegex = /^[a-zA-Z\s]*$/;
+        setIsValid(prevState => ({
+            ...prevState,
+            name: nameRegex.test(value)
+        }));
     }
     const handleEmailChange = e => {
       setEmail(e.target.value)
@@ -35,12 +44,17 @@ function ModalForm() {
 
     const handleSubmit = async e => {
       e.preventDefault()
-      if (isValid && phone) {
-        console.log('Phone number is valid!');
-      } else {
-        alert('Phone number is invalid!');
-        return
+      
+      if (!isValid.name || !name) {
+        alert('Name should not contain numbers!');
+        return;
       }
+      
+      if (!isValid.phone || !phone) {
+        alert('Phone number is invalid!');
+        return;
+      }
+
       const data = new FormData();
       data.append("name",name);
       data.append("email",email);
@@ -79,6 +93,7 @@ function ModalForm() {
           <div className='modal-container'>
             <form id="contact-form" className="modal-form" onSubmit={handleSubmit}>
               <input placeholder="Name" type="text" value={name} onChange={handleNameChange} required/>
+              {!isValid.name && <span style={{ color: 'red' }}>Name should not contain numbers</span>}
               <input placeholder="Email" type="email" value={email} onChange={handleEmailChange}  required/>
               <input placeholder="Phone Number" type="tel" value={phone} onChange={handlePhoneChange} required/>
               {!isValid && <span style={{ color: 'red' }}>Invalid phone number</span>}
