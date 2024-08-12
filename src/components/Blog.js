@@ -10,10 +10,12 @@ import TextField from "@mui/material/TextField";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
   const { id } = useParams();
+  const navigate = useNavigate(); 
 
   const [selectedPostId, setSelectedPostId] = useState([]);
   const [dataCollection, setDataCollection] = useState([]);
@@ -24,24 +26,32 @@ export default function Blog() {
     fetch(`https://cityplot.io/items/blogs/`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.data, "dataaaaaaaa");
+        // console.log(data.data, "dataaaaaaaa");
         setDataCollection(data.data);
         setSelectedPostId(data.data.id);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, [id]);
 
+      // Find the matching blog post based on the ID from the URL params
+      const matchingPost = data.data.find((post) => post.id === parseInt(id));
+
+      if (matchingPost) {
+        setSelectedPost(matchingPost);
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+  }, [id]);
+  
   const post = dataCollection.filter((posts) => posts.id === parseInt(id));
-  console.log(post, "39#####");
+
   const handleLearnMore = (postId) => {
-    console.log("41####");
     const selectpost = dataCollection.filter(
       (posts) => posts.id === parseInt(postId)
     );
-    console.log(selectpost, "44");
-    setSelectedPost(selectpost);
+    // Update the URL with the new post ID
+    navigate(`/blog/${postId}`);
+    
+    // Scroll to the top of the page
     window.scrollTo(0, 0);
   };
 
@@ -63,7 +73,30 @@ export default function Blog() {
   // }
 
   return (
-    <div
+    <>
+      {selectedPost && (
+        <Helmet>
+          <title>{selectedPost.meta_title || "Default Title"}</title>
+          <meta
+            name="description"
+            content={selectedPost.meta_description || "Default Description"}
+          />
+          <meta
+            name="keywords"
+            content={selectedPost.meta_keywords || "Default Keywords"}
+          />
+          <meta
+            property="og:image"
+            content={
+              selectedPost.og_image
+                ? `https://cityplot.io/assets/${selectedPost.og_image}`
+                : "default-image-url"
+            }
+          />
+        </Helmet>
+      )}
+      
+      <div
       className="container-fluid"
       style={{ marginTop: "10%", paddingLeft: "4%", paddingRight: "4%" }}
     >
@@ -348,5 +381,6 @@ export default function Blog() {
         </div>
       </div>
     </div>
+    </>
   );
 }

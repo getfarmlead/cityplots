@@ -149,7 +149,7 @@ export default function NewBlog() {
         <img
           src={flower}
           style={{ height: "100%", objectFit: "cover", marginTop: "2%" }}
-          alt="Image"
+          alt="flower"
         />
         <div className="overlay-text">
           <CustomTabPanel value={value} index={0}>
