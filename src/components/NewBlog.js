@@ -236,7 +236,7 @@ export default function NewBlog() {
                       </Typography>
                     </CardContent>
                     <CardActions>
-                      <Link href={`/blog/${post.id}`}>Read more</Link>
+                      <Link href={`/blog/${post.slug}`}>Read more</Link>
                     </CardActions>
                   </Card>
                 );
@@ -378,7 +378,7 @@ export default function NewBlog() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link href={`/blog/${post.id}`}>Read more</Link>
+                    <Link href={`/blog/${post.slug}`}>Read more</Link>
                   </CardActions>
                 </Card>
               </div>
