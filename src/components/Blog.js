@@ -95,11 +95,18 @@ export default function Blog() {
                         <h2 key={index} style={{ fontWeight: "bold", fontSize: "28px" }}>
                           {item.data.text}
                         </h2>
-                      ) : (
-                        <p key={index} style={{ fontSize: "18px" }}>
-                          {item.data.text}
-                        </p>
-                      )
+                        ) : item.type === "image" ? (
+                          <img
+                            key={index}
+                            src={`https://cityplot.io/assets/${item.data.file.fileId}`}
+                            alt={item.data.caption || 'Image'}
+                            style={{ width: "100%", height: "auto", margin: "10px 0" }}
+                          />
+                        ) : (
+                          <p key={index} style={{ fontSize: "18px" }}>
+                            {item.data.text}
+                          </p>
+                        )
                     )}
                   </Typography>
                 </div>
