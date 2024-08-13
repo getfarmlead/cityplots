@@ -12,6 +12,7 @@ import TextField from "@mui/material/TextField";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import DOMPurify from 'dompurify';
 
 export default function Blog() {
   const { slug } = useParams();
@@ -103,9 +104,8 @@ export default function Blog() {
                             style={{ width: "100%", height: "auto", margin: "10px 0" }}
                           />
                         ) : (
-                          <p key={index} style={{ fontSize: "18px" }}>
-                            {item.data.text}
-                          </p>
+                          <p key={index} style={{ fontSize: "18px" }}
+                          dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(item.data.text),}} />
                         )
                     )}
                   </Typography>
