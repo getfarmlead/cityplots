@@ -203,46 +203,79 @@ export default function NewBlog() {
         className="container-fluid"
         style={{ paddingLeft: "4%", paddingRight: "4%" }}
       >
-        <div className="newblog">
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={9}>
-              {filteredPosts.map((post) => {
-                return (
-                  <Card fullWidth key={post.id} style={{ marginTop: "5%" }}>
-                    <CardMedia
-                      sx={{ height: 350 }}
-                      image={`https://cityplot.io/assets/${post.image}`}
-                      title="green iguana"
-                    />
-                    <CardContent>
-                      <p style={{ textAlign: "left" }}>
-                        {formatDate(post.publish)}
-                      </p>
+        <div className="row">
+          {filteredPosts.map((post) => {
+            return (
+              <div className="col-sm-12 col-lg-4">
+                <Card fullWidth key={post.id} style={{ marginTop: "5%" }}>
+                  <CardMedia
+                    sx={{ height: 350 }}
+                    image={`https://cityplot.io/assets/${post.image}`}
+                    title="green iguana"
+                  />
+                  <CardContent>
+                    <p style={{ textAlign: "left" }}>
+                      {formatDate(post.publish)}
+                    </p>
 
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        component="div"
-                        style={{ textAlign: "left" }}
-                      >
-                        {post.title}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        style={{ textAlign: "left" }}
-                      >
-                        {post.description}
-                      </Typography>
-                    </CardContent>
-                    <CardActions>
-                      <Link href={`/blog/${post.slug}`}>Read more</Link>
-                    </CardActions>
-                  </Card>
-                );
-              })}
-              <br />
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      style={{ textAlign: "left" }}
+                    >
+                      {post.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      style={{ textAlign: "left" }}
+                    >
+                      {`${post.description.slice(0, 250)}...`}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Link href={`/blog/${post.slug}`}>Read more</Link>
+                  </CardActions>
+                </Card>
+              </div>
+            );
+          })}
+          <Typography
+            variant="h5"
+            gutterBottom
+            style={{
+              color: "white",
+              textAlign: "left",
+              marginTop: "80px",
+            }}
+          >
+            MOST READ BLOGS
+          </Typography>
+          {topReadBlogs.map((blog) => (
+            <Link
+              key={blog.id}
+              gutterBottom
+              href={`/blog/${blog.slug}`}
+              underline="hover"
+              style={{
+                color: "#61ff00",
+                textAlign: "left",
+                marginTop: "10px",
+                display: "block",
+              }}
+            >
+              {blog.title}
+            </Link>
+          ))}
+        </div>
+        {/* <div className="newblog">
+          <Grid container direction="row">
+            <Grid item  md={4}>
+              
             </Grid>
+            
+          </Grid>
             <Grid item xs={12} md={3} className="contact-us">
               <Typography style={{ color: "#61ff00", marginTop: "5%" }}>
                 CONNECT WITH US
@@ -310,35 +343,8 @@ export default function NewBlog() {
                 Enquire Now
               </Button>
 
-              <Typography
-                variant="h5"
-                gutterBottom
-                style={{
-                  color: "white",
-                  textAlign: "left",
-                  marginTop: "20px",
-                }}
-              >
-                MOST READ BLOGS
-              </Typography>
-              {topReadBlogs.map((blog) => (
-                <Link
-                  key={blog.id}
-                  gutterBottom
-                  href={`/blog/${blog.id}`}
-                  underline="hover"
-                  style={{
-                    color: "#61ff00",
-                    textAlign: "left",
-                    marginTop: "10px",
-                    display: "block",
-                  }}
-                >
-                  {blog.title}
-                </Link>
-              ))}
+              
             </Grid>
-          </Grid>
           <div className="row" style={{ rowGap: "50px" }}>
             <Typography
               variant="h3"
@@ -356,7 +362,7 @@ export default function NewBlog() {
                     title={post.title}
                   />
 
-                  {/* <img src={post.image} width={120} height={120} /> */}
+                  <img src={post.image} width={120} height={120} alt="" />
                   <CardContent sx={{ height: 220 }}>
                     <p style={{ textAlign: "left" }}>
                       {formatDate(post.publish)}
@@ -385,16 +391,16 @@ export default function NewBlog() {
             ))}
           </div>
 
-          <div className="page">
-            <Pagination
-              count={totalPages}
-              page={currentPage}
-              variant="outlined"
-              shape="rounded"
-              color="primary"
-              onChange={handlePageChange}
-            />
-          </div>
+        </div> */}
+        <div className="page">
+          <Pagination
+            count={totalPages}
+            page={currentPage}
+            variant="outlined"
+            shape="rounded"
+            color="primary"
+            onChange={handlePageChange}
+          />
         </div>
       </div>
     </div>
