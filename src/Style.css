@@ -1471,3 +1471,12 @@ img.phone_icon {
 .contact-icon a:hover{
   color:#61ff00;
 }
+
+.text-btn a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.text-btn a:hover{
+  color:#61ff00;
+}

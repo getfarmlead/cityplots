@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 import Blog from "./components/Blog.js";
 import NewBlog from './components/NewBlog.js';
 import MaraimalaiNagarPlots from './components/landingPage/MaraimalaiNagarPlots.js';
-import ContactPage from './components/pages/about/ContactPage.js'
-
+import ContactPage from './components/pages/about/ContactPage.js';
+import NotFound from './components/404.js';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Route path="/newblog" element={<NewBlog />} />
         <Route path="/maraimalainagar-plots" element={<MaraimalaiNagarPlots />} />
         <Route path="/contact-us" element={<ContactPage/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer/>
     </div>
