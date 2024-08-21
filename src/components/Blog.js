@@ -42,7 +42,7 @@ export default function Blog() {
     const selectedPost = dataCollection.find((post) => post.id === postId);
 
     if (selectedPost && selectedPost.slug) {
-      navigate(`/blog/${selectedPost.slug}`);
+      navigate(`/blogs/${selectedPost.slug}`);
       window.scrollTo(0, 0);
     }
   };
@@ -177,7 +177,7 @@ export default function Blog() {
           )}
           <div className="row" style={{ rowGap: "50px" }}>
             <Typography variant="h3" gutterBottom style={{ color: "white", textAlign: "left" }}>
-              Most Read Blogs
+            Recent Posts
             </Typography>
             {dataCollection.map((post) => (
               <div className="col-sm-12 col-lg-4" key={post.id}>

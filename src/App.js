@@ -20,8 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/About" element={<About />}></Route>
-        <Route path="/blog/:slug" element={<Blog />} />
-        <Route path="/newblog" element={<NewBlog />} />
+        <Route path="/blogs/:slug" element={<Blog />} />
+        <Route path="/blogs" element={<NewBlog />} />
         <Route path="/maraimalainagar-plots" element={<MaraimalaiNagarPlots />} />
         <Route path="/contact-us" element={<ContactPage/>} />
         <Route path="*" element={<NotFound />} />

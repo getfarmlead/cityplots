@@ -11,7 +11,7 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { Link, Pagination } from "@mui/material";
-import flower from "../../src/images/blog/Comp 1_1.gif";
+import flower from "../../src/images/blog-img.webp";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -59,18 +59,18 @@ export default function NewBlog() {
   };
 
   const handleCategoryChange = (categoryId) => {
-    console.log(categoryId, "62####");
     setSelectedCategory(categoryId);
+  
     if (categoryId === "all") {
+      // Display all posts when "Residential" is selected
       setDataCollection(originalDataCollection);
+      console.log(originalDataCollection);
+      
     } else {
-      const filteredPosts =
-        categoryId.length > 0
-          ? originalDataCollection.filter((post) =>
-              categoryId.includes(post.category_id)
-            )
-          : originalDataCollection;
-
+      // Filter posts based on the selected category
+      const filteredPosts = originalDataCollection.filter(
+        (post) => post.category_id === categoryId
+      );
       setDataCollection(filteredPosts);
     }
   };
@@ -144,31 +144,20 @@ export default function NewBlog() {
   };
 
   return (
-    <div>
+    <div style={{marginTop: "90px"}}>
       <div class="overlay-container">
         <img
           src={flower}
-          style={{ height: "100%", objectFit: "cover", marginTop: "2%" }}
           alt="flower"
         />
         <div className="overlay-text">
           <CustomTabPanel value={value} index={0}>
             <Typography variant="h2">Blogs</Typography>
-            <Typography variant="body1">
-              “Owning a home is a keystone of wealth, both financial affluence
-              and emotional security.”
-            </Typography>
-            <Typography variant="body1">– Suze Orman</Typography>
           </CustomTabPanel>
 
           {categoryList.map((data, index) => (
             <CustomTabPanel key={index + 1} value={value} index={index + 1}>
               <Typography variant="h2">{data.category_name}</Typography>
-              <Typography variant="body1">
-                “Owning a home is a keystone of wealth, both financial affluence
-                and emotional security.”
-              </Typography>
-              <Typography variant="body1">– Suze Orman</Typography>
             </CustomTabPanel>
           ))}
         </div>
@@ -182,7 +171,7 @@ export default function NewBlog() {
               aria-label="basic tabs example"
             >
               <Tab
-                label="Blogs"
+                label="Residential"
                 {...a11yProps(0)}
                 onClick={() => handleCategoryChange("all")}
               />
@@ -235,13 +224,13 @@ export default function NewBlog() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link href={`/blog/${post.slug}`}>Read more</Link>
+                    <Link href={`/blogs/${post.slug}`}>Read more</Link>
                   </CardActions>
                 </Card>
               </div>
             );
           })}
-          <Typography
+          {/* <Typography
             variant="h5"
             gutterBottom
             style={{
@@ -267,7 +256,7 @@ export default function NewBlog() {
             >
               {blog.title}
             </Link>
-          ))}
+          ))} */}
         </div>
         {/* <div className="newblog">
           <Grid container direction="row">
