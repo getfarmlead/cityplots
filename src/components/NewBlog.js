@@ -59,18 +59,18 @@ export default function NewBlog() {
   };
 
   const handleCategoryChange = (categoryId) => {
+    console.log(categoryId, "62####");
     setSelectedCategory(categoryId);
-  
     if (categoryId === "all") {
-      // Display all posts when "Residential" is selected
       setDataCollection(originalDataCollection);
-      console.log(originalDataCollection);
-      
     } else {
-      // Filter posts based on the selected category
-      const filteredPosts = originalDataCollection.filter(
-        (post) => post.category_id === categoryId
-      );
+      const filteredPosts =
+        categoryId.length > 0
+          ? originalDataCollection.filter((post) =>
+              categoryId.includes(post.category_id)
+            )
+          : originalDataCollection;
+
       setDataCollection(filteredPosts);
     }
   };

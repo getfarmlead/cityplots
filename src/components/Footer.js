@@ -335,6 +335,9 @@ function Footer() {
                             <li>
                               <a href="/about">About Us</a>
                             </li>
+                            <li>
+                              <a href="/maraimalainagar-plots">Maraimalai Nagar</a>
+                            </li>
                           </ul>
                         </div>
                       </div>
