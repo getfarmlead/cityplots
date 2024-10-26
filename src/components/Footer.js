@@ -87,7 +87,7 @@ const locations = [
   //   address_1: ["141 CECIL STREET,", " #07-01 TUNG ANN ASSOCIATION BUILDING,"],
   //   address_2: ["Singapore - 069541."],
   //   phone: "+91 7092652333",
-  //   email: "hr@cityplots.io",
+  //   email: "info@cityplots.io",
   // },
   {
     image: chennai,
@@ -99,7 +99,7 @@ const locations = [
     address_1: [""],
     address_2: ["Chennai - 600032."],
     phone: "+91 7092652333",
-    email: "hr@cityplots.io",
+    email: "info@cityplots.io",
   },
   {
     image: bangalore,
@@ -110,7 +110,7 @@ const locations = [
     address_1: ["", ""],
     address_2: [""],
     phone: "+91 8071055700",
-    email: "hr@cityplots.io",
+    email: "info@cityplots.io",
   },
   {
     image: newdelhi,
@@ -121,7 +121,7 @@ const locations = [
     address_1: [" ", ""],
     address_2: ["New Delhi-110001."],
     phone: "+91 11 23486800",
-    email: "hr@cityplots.io",
+    email: "info@cityplots.io",
   },
   {
     image: telugana,
@@ -132,7 +132,7 @@ const locations = [
     address_1: [],
     address_2: ["Telangana-500081."],
     phone: "+91 40 71055700",
-    email: "hr@cityplots.io",
+    email: "info@cityplots.io",
   },
   {
     image: mumbai,
@@ -143,7 +143,7 @@ const locations = [
     address_1: [""],
     address_2: ["Maharashtra-400076."],
     phone: "+91 40 71055700",
-    email: "hr@cityplots.io",
+    email: "info@cityplots.io",
   },
 ];
 
@@ -197,7 +197,7 @@ function Footer() {
                     <p>#07-01 TUNG ANN ASSOCIATION BUILDING,</p>
                     <p>Singapore - 069541.</p>
                     <p>+91 7092652333</p>
-                    <p className="main_id">hr@cityplots.io</p>
+                    <p className="main_id">info@cityplots.io</p>
                   </div>
                 </Col>
 

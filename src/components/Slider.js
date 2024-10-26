@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Typist from "react-typist";
+import rightSideImg from "../images/Robot_booking.png";
 
 function Slider() {
   return (
@@ -53,25 +54,39 @@ function Slider() {
                     </Typist>
                   </div>
                   <div className="container">
-                    <div className="image-container">
-                      <div className="overlay-image">
+                    <div className="row">
+                      <div className="col-lg-8">
+                        <div className="image-container">
+                          <div className="overlay-image">
+                            <img
+                              src={mainbanner}
+                              className="image-background"
+                              alt="Main Banner"
+                            />
+                            <img
+                              src={comment1}
+                              className="small-image comment1" // Add a class for styling
+                              alt="comment 1"
+                            />
+                            <img
+                              src={comment2}
+                              className="small-image comment2" // Add a class for styling
+                              alt="comment 2"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                        <div className="overlay-image">
                         <img
-                          src={mainbanner}
-                          className="image-background"
-                          alt="Main Banner"
-                        />
-                        <img
-                          src={comment1}
-                          className="small-image comment1" // Add a class for styling
-                          alt="comment 1"
-                        />
-                        <img
-                          src={comment2}
-                          className="small-image comment2" // Add a class for styling
-                          alt="comment 2"
-                        />
+                              src={rightSideImg}
+                              className="image-background"
+                              alt="Main Banner"
+                            />
+                        </div>
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </Col>

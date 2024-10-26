@@ -78,7 +78,7 @@ function ContactPage() {
             <ul className='contact-icon'>
               <li>
                 <img src={Email} alt='mail icon' width="auto" ></img>
-                <a href='mailto:hr@cityplots.io' className='contact-para'>hr@cityplots.io</a>
+                <a href='mailto:info@cityplots.io' className='contact-para'>info@cityplots.io</a>
               </li>
               <li>
                 <img src={phone} alt='phone icon' width="auto" ></img>
